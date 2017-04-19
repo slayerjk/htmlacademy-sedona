@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PT Sans/PT Sans.eot');
+	src: 
+      local('☺'), 
+      url('../fonts/PT Sans/PT Sans.woff') format('woff'), 
+      url('../fonts/PT Sans/PT Sans.ttf') format('truetype'), 
+      url('../fonts/PT Sans/PT Sans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Sans Bold';
+	src: url('../fonts/PT Sans Bold/PT Sans Bold.eot');
+	src: 
+      local('☺'), 
+      url('../fonts/PT Sans Bold/PT Sans Bold.woff') format('woff'), url('../fonts/PT Sans Bold/PT Sans Bold.ttf') format('truetype'), 
+      url('../fonts/PT Sans Bold/PT Sans Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder {
+
+}
+*/
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+body {
+  font-size: 0.625em; }
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto
+}
+
+ul {
+  list-style: none; }
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: ""; }
+
+.container {
+  width: 100%;
+  /*max-width: ;*/
+  margin: 0 auto; }
+
+.hidden {
+  display: none; }
+/*SASS-----------------------------------------*/
+
+
+
+/*---------------------------------------------*/
+/* Media-queries-desktops/tablets */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Media-queries-desktops/smartphones */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
