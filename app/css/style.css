@@ -93,7 +93,8 @@ a {
   color: #000000; }
 
 body {
-  font-size: 0.625em; }
+  font-size: 0.625em;
+  background-color: grey; }
 
 img,
 video,
