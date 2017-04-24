@@ -1,0 +1,17 @@
+.search-hotel {
+  position: relative;
+  padding-top: 100px;
+  /*check*/
+  padding-bottom: 100px;
+  /*check*/
+  text-align: center; }
+  .search-hotel__form {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 40%;
+    /*check*/
+    -webkit-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    outline: 1px solid red; }

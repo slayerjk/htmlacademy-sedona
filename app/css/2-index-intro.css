@@ -1,0 +1,19 @@
+.intro {
+  position: relative;
+  padding-top: 150px;
+  /*check*/
+  padding-bottom: 250px;
+  /*check*/
+  text-align: center;
+  background: #fff url("../img/intro__bg.png") no-repeat center;
+  background-size: cover;
+  outline: 1px solid red; }
+  .intro__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    outline: 1px solid red; }

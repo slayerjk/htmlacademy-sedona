@@ -1,0 +1,16 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  
+  &__block-part {
+    width: 30%;/*check*/
+    outline: 1px solid red;
+  }
+  
+  &__block-part_bg {
+    width: 60%;/*check*/
+  }
+}

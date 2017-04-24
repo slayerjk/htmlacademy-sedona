@@ -1,0 +1,31 @@
+.footer {
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    outline: 1px solid red;
+  }
+  
+  &__wrapper-block {
+    width: 30%;
+    text-align: center;
+    outline: 1px solid red;
+  }
+  
+  &__twitter-tag {
+    
+    outline: 1px solid red;
+  }
+  
+  &__socials {
+    
+    outline: 1px solid red;
+  }
+  
+  &__made-by {
+    
+    outline: 1px solid red;
+  }
+}

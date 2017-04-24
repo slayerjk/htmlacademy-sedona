@@ -1,0 +1,20 @@
+.intro {
+  position: relative;
+  padding: {
+    top: 150px;/*check*/
+    bottom: 250px;/*check*/
+  }
+  text-align: center;
+  background: #fff url('../img/intro__bg.png') no-repeat center;
+  background-size: cover;
+  outline: 1px solid red;
+  
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, 0%);
+    outline: 1px solid red;
+  }
+}

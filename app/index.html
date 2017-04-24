@@ -18,7 +18,11 @@
   <link href="css/style.css" rel="stylesheet">
   <!--<link href="css/style.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="css/1-header-menu.css">
-
+  <link rel="stylesheet" href="css/2-index-intro.css">
+  <link rel="stylesheet" href="css/3-index-features.css">
+  <link rel="stylesheet" href="css/4-index-search-hotel.css">
+  <link rel="stylesheet" href="css/5-index-map.css">
+  <link rel="stylesheet" href="css/6-footer.css">
 
   <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
   <!--<link href="FONT" rel="stylesheet">-->
@@ -29,11 +33,15 @@
 </head>
 
 <body>
-  <header class="header-menu">
-    <div class="container">
-      <div class="header-menu__wrapper">
+
+  <div class="body__container">
+
+    <header class="header-menu">
+      <div class="header-menu__wrapper clearfix">
         <div class="header-menu__logo">
-          <img class="header-menu__logo-img" src="img/header__logo.png" width="67" height="56" alt="logo">
+          <span class="header-menu__logo-link">
+            <img class="header-menu__logo-img" src="img/header__logo.png" width="67" height="56" alt="logo">  
+          </span>
         </div>
         <ul class="header-menu__col header-menu__col_left">
           <li class="header-menu__li">
@@ -48,15 +56,13 @@
             <a href="#" class="header-menu__link">Карта штата</a>
           </li>
           <li class="header-menu__li">
-            <a href="#" class="header-menu__link">Гостиницы</a>
+            <a href="hotels.html" class="header-menu__link">Гостиницы</a>
           </li>
         </ul>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="intro">
-    <div class="container">
+    <div class="intro">
       <img class="intro__img intro__img_welcome" src="img/intro__Welcome.png" width="188" height="45" alt="welcome">
       <img class="intro__img intro__img_welcome" src="img/intro__to-the-gorgeous.png" width="176" height="30" alt="to the gorgeous">
       <img class="intro__img intro__img_welcome" src="img/intro__Sedona.png" width="458" height="78" alt="Sedona">
@@ -69,10 +75,8 @@
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </span>
     </div>
-  </div>
 
-  <div class="features">
-    <div class="container">
+    <div class="features">
       <div class="features__block-part features__block-part_blue">
         <h3 class="sedona-h3 features__sedona-h3 features__sedona-h3_white">
             НАСТОЯЩИЙ
@@ -121,7 +125,7 @@
           </h3>
         <span class="sedona-description features__sedona-description features__sedona-description_white">— №2 —</span>
         <p class="sedona-description features__sedona-description features__sedona-description_white">
-          Да, по нему можно пройти! Если конечно 
+          Да, по нему можно пройти! Если конечно
           <br>вы осмелитесь
         </p>
       </div>
@@ -129,7 +133,7 @@
         <h3 class="sedona-h3 features__sedona-h3">Небольшая площадь</h3>
         <span class="sedona-description features__sedona-description features__sedona-description_white">— №3 —</span>
         <p class="sedona-description features__sedona-description">
-          ВСЕ достопримечательности 
+          ВСЕ достопримечательности
           <br>находятся очень близко
         </p>
       </div>
@@ -137,7 +141,7 @@
         <h3 class="sedona-h3 features__sedona-h3">Красивая дорога</h3>
         <span class="sedona-description features__sedona-description features__sedona-description_white">— №3 —</span>
         <p class="sedona-description features__sedona-description">
-          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем 
+          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем
           <br>НЕ СКУЧНО!
         </p>
       </div>
@@ -145,31 +149,71 @@
         <h3 class="sedona-h3 features__sedona-h3">Мало туристов</h3>
         <span class="sedona-description features__sedona-description features__sedona-description_white">— №3 —</span>
         <p class="sedona-description features__sedona-description">
-          Большинство едет в гранд каньон и 
+          Большинство едет в гранд каньон и
           <br>толпится там
         </p>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="container">
-
+    <div class="search-hotel">
+      <h2 class="sedona-h2 search-hotel__sedona-h2">Заинтересовались?</h2>
+      <p class="sedona-description search-hotel__sedona-description">
+        Укажите предполагаемые даты поездки,
+        <br>и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <form class="search-hotel__form" method="post">
+        <h2 class="sedona-h2 search-hotel__sedona-h2">
+          Поиск гостиницы в седоне
+        </h2>
+        <div class="search-hotel__form-content">
+          <label for="arrival" class="search-hotel__label">Дата заезда:</label>
+          <input id="arrival" class="search-hotel__input search-hotel__input_date" type="date" placeholder="">
+          <label for="departure" class="search-hotel__label">Дата выезда:</label>
+          <input id="departure" class="search-hotel__input search-hotel__input_date" type="date" placeholder="">
+          <label for="adults" class="search-hotel__label">Взрослые:</label>
+          <input id="adults" class="search-hotel__input search-hotel__input_number" type="text" placeholder="">
+          <label for="children" class="search-hotel__label">Дети:</label>
+          <input id="children" class="search-hotel__input search-hotel__input_number" type="text" placeholder="">
+          <input class="search-hotel__input_submit" type="submit" value="Найти">
+        </div>
+      </form>
     </div>
-  </footer>
 
-  <div class="overlay"></div>
-
-  <!-- Scripts______________________________________ -->
-  <script src="script/jquery-3.1.1.min.js"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-
-  <script src="script/jquery-ui.min.js"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
-
-  <script src="script/script.js"></script>
-  <!--<script src="script/script.min.js"></script>-->
-
+    <footer class="footer">
+      <div class="map">
+        <a class="map__link-no-js" target="_blank" href="https://www.google.ru/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8602378,-111.8063638,11.25z/data=!4m13!1m7!3m6!1s0x872da132f942b00d:0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!3b1!8m2!3d34.8697395!4d-111.7609896!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896?hl=ru">
+          <img class="map__img" src="img/map_sedona.png" width="1200" height="593" alt="sedona map">
+        </a>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__wrapper-block footer__twitter-tag">
+          <a class="sedona-h3 footer__sedona-h3" href="#">#visitsedona</a>
+        </div>
+        <div class="footer__wrapper-block footer__socials">
+          <a class="footer__social__link" htef="#">
+            <span class="icon-twitter footer__icon-font footer__icon-font_twitter"></span>
+          </a>
+          <a class="footer__social__link" htef="#">
+            <span class="icon-facebook footer__icon-font footer__icon-font_facebook"></span>
+          </a>
+          <a class="footer__social__link" htef="#">
+            <span class="icon-youtube footer__icon-font footer__icon-font_youtube"></span>
+          </a>
+        </div>
+        <div class="footer__wrapper-block footer__made-by">
+          <span class="sedona-description footer__sedona-description">Website by</span>
+          <a class="made-by__link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru">
+            <img class="made-by__img" src="img/footer__made-by-logo.png" width="113" height="39" alt="htmlacademy logo">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="modal-window modal-window_map hidden">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249297.54447069517!2d-111.91910290205143!3d34.817964488009466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1493025891213" width="600" height="450" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+  </div>
 </body>
 
 </html>

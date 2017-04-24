@@ -94,7 +94,8 @@ a {
 
 body {
   font-size: 0.625em;
-  background-color: grey; }
+  background-color: lightgrey;
+  /*check*/ }
 
 img,
 video,
@@ -105,15 +106,19 @@ audio {
 ul {
   list-style: none; }
 
+.body__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  /*check*/ }
+
 .clearfix {
   display: table;
   clear: both;
   content: ""; }
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
 
 .hidden {
   display: none; }

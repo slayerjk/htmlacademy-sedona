@@ -1,0 +1,29 @@
+.footer__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  outline: 1px solid red; }
+
+.footer__wrapper-block {
+  width: 30%;
+  text-align: center;
+  outline: 1px solid red; }
+
+.footer__twitter-tag {
+  outline: 1px solid red; }
+
+.footer__socials {
+  outline: 1px solid red; }
+
+.footer__made-by {
+  outline: 1px solid red; }

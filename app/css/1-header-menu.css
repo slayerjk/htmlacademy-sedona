@@ -1,0 +1,29 @@
+.header-menu {
+  outline: 1px solid red; }
+  .header-menu__wrapper {
+    position: relative;
+    width: 100%;
+    outline: 1px solid red; }
+  .header-menu__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    outline: 1px solid red; }
+  .header-menu__col {
+    outline: 1px solid red; }
+  .header-menu__col_left {
+    float: left; }
+  .header-menu__col_right {
+    float: right; }
+  .header-menu__li {
+    display: inline-block; }
+  .header-menu__link {
+    display: block;
+    padding-top: 25px;
+    /*check*/
+    padding-bottom: 25px;
+    /*check*/
+    outline: 1px solid red; }

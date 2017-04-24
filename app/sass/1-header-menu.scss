@@ -1,0 +1,46 @@
+.header-menu {
+  outline: 1px solid red;
+  
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    outline: 1px solid red;
+  }
+  
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    outline: 1px solid red;
+  }
+  
+  &__col {
+    outline: 1px solid red;
+  }
+  
+  &__col_left {
+    float: left;
+  }
+  
+  &__col_right {
+    float: right;
+  }
+  
+  &__li {
+    display: inline-block;
+  }
+   
+  &__link {
+    display: block;
+    padding: {
+      top: 25px;/*check*/
+      bottom: 25px;/*check*/
+    }
+    outline: 1px solid red;
+  }
+    
+  
+  
+}
+
