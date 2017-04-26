@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*SASS-----------------------------------------*/
+/*---------------------------------------------*/
 @font-face {
   font-family: 'PT Sans';
   src: url("../fonts/PT Sans/PT Sans.eot");
@@ -122,6 +124,22 @@ ul {
 
 .hidden {
   display: none; }
+
+.sedona-description {
+  font-size: 1.4em;
+  line-height: 1.85714em;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #333333;
+  /*14/56*/
+  text-transform: uppercase; }
+
+.sedona-h3 {
+  font-size: 2.1em;
+  line-height: 1.2381em;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  color: #000;
+  /*21/56*/
+  text-transform: uppercase; }
 
 /* Media-queries-desktops/tablets */
 /* Large Devices, Wide Screens */

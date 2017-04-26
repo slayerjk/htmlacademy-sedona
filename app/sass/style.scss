@@ -1,3 +1,5 @@
+@import 'sass-common.scss';
+
 @font-face {
 	font-family: 'PT Sans';
 	src: url('../fonts/PT Sans/PT Sans.eot');
@@ -99,6 +101,18 @@ ul {
 
 .hidden {
   display: none; }
+
+.sedona-description {
+  @include font(1.4em, 1.8571428571em, "PT Sans", #333333);/*14/56*/
+  text-transform: uppercase;
+}
+
+.sedona-h3 {
+  @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);/*21/56*/
+  text-transform: uppercase;
+}
+
+
 
 /* Media-queries-desktops/tablets */
 /* Large Devices, Wide Screens */

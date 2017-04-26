@@ -1,12 +1,10 @@
+@import "sass-common.scss";
+
 .intro {
   position: relative;
-  padding: {
-    top: 150px;/*check*/
-    bottom: 250px;/*check*/
-  }
+  padding-top: 507px;
   text-align: center;
-  background: #fff url('../img/intro__bg.png') no-repeat center;
-  background-size: cover;
+  background: #fff url('../img/intro__bg.png') no-repeat center -57px;
   outline: 1px solid red;
   
   &__img {
@@ -17,4 +15,67 @@
     transform: translate(-50%, 0%);
     outline: 1px solid red;
   }
+  
+  &__img_welcome {
+    top: 75px;
+  }
+  
+  &__img_gorgeous-block {
+    top: 130px;
+    width: 14.6666666667%;/*176px;*/
+    height: 30px;
+  }
+  
+  &__img_gorgeous-block::before,
+  &__img_gorgeous-block::after {
+    @extend %pseudo;
+    top: 43%;
+    width: 29px;
+    height: 2px;
+    background-color: #766357;
+  }
+  
+  &__img_gorgeous-block::before {
+    left: -39px;
+  }
+  
+  &__img_gorgeous-block::after {
+    right: -39px;
+  }
+  
+  &__img_gorgeous {
+    position: relative;
+  }
+  
+  &__img_sedona {
+    top: 213px;
+  }
+  
+  &__img_because {
+    top: 348px;
+  }
+  
+  &__description-block {
+    position: relative;
+    padding: {
+      top: 60px;
+      bottom: 50px;
+    }
+    background-color: #fff;
+  }
+  
+  &__description-block::before {
+    @extend %pseudo;
+    top: -57px;
+    left: 0;
+    width: 100%;/*1200px;*/
+    height: 57px;
+    background: transparent url('../img/intro__bg-shape.png') no-repeat center;
+    outline: 1px solid red;
+  }
+  
+  &__sedona-h3 {
+    margin-bottom: 28px;
+  }
+  
 }
