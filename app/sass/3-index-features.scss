@@ -1,3 +1,5 @@
+@import "sass-common.scss";
+
 .features {
   display: flex;
   justify-content: center;
@@ -6,11 +8,80 @@
   flex-wrap: wrap;
   
   &__block-part {
-    width: 30%;/*check*/
+    width: 33.33%;/*check*/
+    text-align: center;
     outline: 1px solid red;
   }
   
   &__block-part_bg {
-    width: 60%;/*check*/
+    width: 66.67%;/*check*/
   }
+  
+  &__block-part_blue {
+    padding: {
+      top: 55px;
+      bottom: 51px;
+    }
+    background-color: #81b3d2;
+    
+    .features__sedona-h3_white,
+    .features__sedona-description_white
+    {
+      color: #fff;  
+    }
+  }
+  
+  &__sedona-h3 {
+    line-height: 1em;/*21*/
+    margin-bottom: 24px;
+  }
+ 
+  &__sedona-description {
+      line-height: 1.5em;/*21*/
+  }
+  
+  &__sedona-description_number {
+    display: block;
+    margin-bottom: 22px;
+  }
+  
+  &__block-part_icon-decription {
+    padding: {
+      top: 55px;
+      bottom: 83px;
+    }
+    
+    .features__block-part-icon {
+      width: 75px;
+      height: 80px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      background: #fff url('../img/features__icons-sprite.png') no-repeat center;
+      outline: 1px solid red;
+    }
+    
+    .features__block-part-icon_house {
+      background-position: -5px 0px; 
+    }
+    
+    .features__block-part-icon_food {
+      background-position: -90px 0px;
+    }
+    
+    .features__block-part-icon_gift {
+      background-position: -168px -5px;
+    }
+  }
+  
+  &__block-part_grey {
+    background-color: #eeeeee;
+  }
+  
+  &__block-part_decription {
+    padding: {
+      top: 44px;
+      bottom: 60px;
+    }
+  }
+  
 }
