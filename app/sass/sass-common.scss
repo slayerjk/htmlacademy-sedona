@@ -1,4 +1,5 @@
 /*SASS-----------------------------------------*/
+/*Mixins*/
 @mixin font($f-size, $f-l-height, $f-family, $f-color) {
   font-size: $f-size;
   line-height: $f-l-height;
@@ -6,8 +7,12 @@
   color: $f-color;
 }
 
+/*Templates*/
 %pseudo {
   position: absolute;
   content: "";
 }
+
+/*Variables*/
+$sedona-blue: #81b3d2;
 /*---------------------------------------------*/

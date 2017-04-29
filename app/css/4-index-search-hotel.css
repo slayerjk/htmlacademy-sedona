@@ -1,17 +1,81 @@
+/*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
+/*---------------------------------------------*/
 .search-hotel {
   position: relative;
-  padding-top: 100px;
+  padding-top: 53px;
   /*check*/
-  padding-bottom: 100px;
+  padding-bottom: 131px;
   /*check*/
   text-align: center; }
+  .search-hotel__sedona-h2 {
+    margin-bottom: 30px; }
   .search-hotel__form {
     position: absolute;
-    top: 100%;
+    top: 112%;
     left: 50%;
-    width: 40%;
-    /*check*/
+    width: 570px;
     -webkit-transform: translate(-50%, -100%);
         -ms-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
     outline: 1px solid red; }
+  .search-hotel__title-block {
+    padding-top: 29px;
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: #766357; }
+  .search-hotel__sedona-h3 {
+    color: #fff; }
+  .search-hotel__form-content {
+    padding-top: 50px;
+    padding-left: 57px;
+    padding-bottom: 50px;
+    padding-right: 55px;
+    background-color: #fff; }
+  .search-hotel__input-block {
+    width: 100%;
+    margin-bottom: 28px;
+    outline: 1px solid red; }
+    .search-hotel__input-block .search-hotel__label,
+    .search-hotel__input-block .search-hotel__input {
+      font-size: 1.4em;
+      line-height: 1.85714em;
+      font-family: "PT Sans Bold", Arial, sans-serif;
+      color: #000;
+      /*14/26*/
+      text-transform: uppercase; }
+    .search-hotel__input-block .search-hotel__label {
+      float: left;
+      padding-top: 7px;
+      text-align: left; }
+    .search-hotel__input-block .search-hotel__input {
+      float: right;
+      width: 347px;
+      padding-top: 7px;
+      padding-left: 12px;
+      padding-bottom: 7px;
+      padding-right: 5px;
+      background-color: #f2f2f2;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: none;
+      outline: none; }
+  .search-hotel__number-block {
+    outline: 1px solid red; }
+    .search-hotel__number-block .search-hotel__label_number {
+      margin-right: 30px; }
+    .search-hotel__number-block .search-hotel__input_number {
+      width: 98px;
+      text-align: center; }
+  .search-hotel__number-block_left {
+    float: left; }
+  .search-hotel__number-block_right {
+    float: right; }
+  .search-hotel__input_submit {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #81b3d2; }

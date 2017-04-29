@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
 /*---------------------------------------------*/
 @font-face {
   font-family: 'PT Sans';
@@ -105,6 +108,13 @@ audio {
   max-width: 100%;
   height: auto; }
 
+input {
+  border: none;
+  outline: none; }
+
+input[type="submit"] {
+  cursor: pointer; }
+
 ul {
   list-style: none; }
 
@@ -131,6 +141,14 @@ ul {
   font-family: "PT Sans", Arial, sans-serif;
   color: #333333;
   /*14/56*/
+  text-transform: uppercase; }
+
+.sedona-h2 {
+  font-size: 3em;
+  line-height: 0.8em;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  color: #000;
+  /*30/24*/
   text-transform: uppercase; }
 
 .sedona-h3 {

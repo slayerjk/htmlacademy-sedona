@@ -1,8 +1,11 @@
 /*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
 .intro__img_gorgeous-block::before, .intro__img_gorgeous-block::after, .intro__description-block::before {
   position: absolute;
   content: ""; }
 
+/*Variables*/
 /*---------------------------------------------*/
 .intro {
   position: relative;

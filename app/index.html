@@ -175,19 +175,31 @@
         <br>и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <form class="search-hotel__form" method="post">
-        <h2 class="sedona-h2 search-hotel__sedona-h2">
-          Поиск гостиницы в седоне
-        </h2>
+        <div class="search-hotel__title-block">
+          <h3 class="sedona-h3 search-hotel__sedona-h3">
+            Поиск гостиницы в седоне
+          </h3>
+        </div>
         <div class="search-hotel__form-content">
-          <label for="arrival" class="search-hotel__label">Дата заезда:</label>
-          <input id="arrival" class="search-hotel__input search-hotel__input_date" type="date" placeholder="">
-          <label for="departure" class="search-hotel__label">Дата выезда:</label>
-          <input id="departure" class="search-hotel__input search-hotel__input_date" type="date" placeholder="">
-          <label for="adults" class="search-hotel__label">Взрослые:</label>
-          <input id="adults" class="search-hotel__input search-hotel__input_number" type="text" placeholder="">
-          <label for="children" class="search-hotel__label">Дети:</label>
-          <input id="children" class="search-hotel__input search-hotel__input_number" type="text" placeholder="">
-          <input class="search-hotel__input_submit" type="submit" value="Найти">
+          <div class="search-hotel__input-block clearfix">
+            <label for="arrival" class="search-hotel__label">Дата заезда:</label>
+            <input id="arrival" class="search-hotel__input search-hotel__input_date" type="date" placeholder="24 Апреля 2016">
+          </div>
+          <div class="search-hotel__input-block clearfix">
+            <label for="departure" class="search-hotel__label">Дата выезда:</label>
+            <input id="departure" class="search-hotel__input search-hotel__input_date" type="date" placeholder="4 июля 2016">
+          </div>
+          <div class="search-hotel__input-block clearfix">
+            <div class="search-hotel__number-block search-hotel__number-block_left clearfix">
+              <label for="adults" class="search-hotel__label search-hotel__label_number">Взрослые:</label>
+              <input id="adults" class="search-hotel__input search-hotel__input_number" type="text" placeholder="2">
+            </div>
+            <div class="search-hotel__number-block search-hotel__number-block_right clearfix">
+              <label for="children" class="search-hotel__label search-hotel__label_number">Дети:</label>
+              <input id="children" class="search-hotel__input search-hotel__input_number" type="text" placeholder="0">
+            </div>
+          </div>
+          <input class="sedona-h3 search-hotel__sedona-h3 search-hotel__input_submit" type="submit" value="Найти">
         </div>
       </form>
     </div>

@@ -83,6 +83,15 @@ audio {
   height: auto
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
 ul {
   list-style: none; }
 
@@ -107,12 +116,15 @@ ul {
   text-transform: uppercase;
 }
 
+.sedona-h2 {
+  @include font(3em, 0.8em, "PT Sans Bold", #000);/*30/24*/
+  text-transform: uppercase;
+}
+
 .sedona-h3 {
   @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);/*21/56*/
   text-transform: uppercase;
 }
-
-
 
 /* Media-queries-desktops/tablets */
 /* Large Devices, Wide Screens */
