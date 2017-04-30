@@ -1,31 +1,85 @@
+@import "sass-common.scss";
+
 .footer {
+  position: relative;
+  outline: 1px solid red;
   
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 100%;
-    outline: 1px solid red;
+    width: 83%;
+    padding: 0 102px;
+    background-color: #fff;
+  }
+  
+  &__wrapper_index {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: rgba(255, 255, 255, 0.8);
   }
   
   &__wrapper-block {
-    width: 30%;
+    padding: {
+      bottom: 33px;
+    }
     text-align: center;
     outline: 1px solid red;
   }
   
   &__twitter-tag {
-    
+    padding: {
+      top: 44px;
+      left: 30px;
+    }
+    text-align: left;
     outline: 1px solid red;
   }
   
   &__socials {
-    
+    padding: {
+      top: 34px;
+      left: 29px;
+    }
     outline: 1px solid red;
   }
   
+  &__social-link {
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+    width: 46px;
+    height: 48px;
+    text-align: center;
+    background-color: $sedona-blue;
+  }
+  
+  &__social-link:last-of-type {
+    margin-right: 0; 
+  }
+  
+  &__social-icon-font {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  
   &__made-by {
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 39px;
     outline: 1px solid red;
+    
+    .footer__sedona-description {
+      margin-right: 9px;
+      padding-top: 6px;
+      outline: 1px solid red;
+    }
   }
 }

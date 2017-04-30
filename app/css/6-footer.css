@@ -1,29 +1,80 @@
-.footer__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  width: 100%;
+/*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
+/*---------------------------------------------*/
+.footer {
+  position: relative;
   outline: 1px solid red; }
-
-.footer__wrapper-block {
-  width: 30%;
-  text-align: center;
-  outline: 1px solid red; }
-
-.footer__twitter-tag {
-  outline: 1px solid red; }
-
-.footer__socials {
-  outline: 1px solid red; }
-
-.footer__made-by {
-  outline: 1px solid red; }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 83%;
+    padding: 0 102px;
+    background-color: #fff; }
+  .footer__wrapper_index {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .footer__wrapper-block {
+    padding-bottom: 33px;
+    text-align: center;
+    outline: 1px solid red; }
+  .footer__twitter-tag {
+    padding-top: 44px;
+    padding-left: 30px;
+    text-align: left;
+    outline: 1px solid red; }
+  .footer__socials {
+    padding-top: 34px;
+    padding-left: 29px;
+    outline: 1px solid red; }
+  .footer__social-link {
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+    width: 46px;
+    height: 48px;
+    text-align: center;
+    background-color: #81b3d2; }
+  .footer__social-link:last-of-type {
+    margin-right: 0; }
+  .footer__social-icon-font {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .footer__made-by {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding-top: 39px;
+    outline: 1px solid red; }
+    .footer__made-by .footer__sedona-description {
+      margin-right: 9px;
+      padding-top: 6px;
+      outline: 1px solid red; }
