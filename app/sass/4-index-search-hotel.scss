@@ -1,23 +1,25 @@
 @import "sass-common.scss";
-
 .search-hotel {
   position: relative;
   padding: {
-    top: 53px;/*check*/
-    bottom: 131px;/*check*/
+    top: 53px;
+    /*check*/
+    bottom: 131px;
+    /*check*/
   }
   text-align: center;
   
   &__sedona-h2 {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
   
   &__form {
     position: absolute;
-    top: 112%;
+    top: 235.5%;
     left: 50%;
     width: 570px;
     transform: translate(-50%, -100%);
+    z-index: 1;
     outline: 1px solid red;
   }
   
@@ -25,18 +27,18 @@
     padding: {
       top: 29px;
       bottom: 32px;
-    }   
+    }
     text-align: center;
     background-color: #766357;
   }
   
   &__sedona-h3 {
-      color: #fff;
-    }
+    color: #fff;
+  }
   
   &__form-content {
     padding: {
-      top: 50px;
+      top: 54px;
       left: 57px;
       bottom: 50px;
       right: 55px;
@@ -45,67 +47,111 @@
   }
   
   &__input-block {
+    position: relative;
     width: 100%;
     margin-bottom: 28px;
     outline: 1px solid red;
-    
-    .search-hotel__label,
-    .search-hotel__input {
-      @include font(1.4em, 1.8571428571em, "PT Sans Bold", #000);/*14/26*/
-      text-transform: uppercase;
+  }
+  
+  &__label,
+  &__input {
+    @include font(1.4em, 1.8571428571em, "PT Sans Bold", #000);
+    /*14/26*/
+    text-transform: uppercase;
+  }
+  
+  &__label {
+    float: left;
+    padding-top: 7px;
+    text-align: left;
+  }
+  
+  &__input {
+    float: right;
+    width: 347px;
+    padding: {
+      top: 7px;
+      left: 12px;
+      bottom: 7px;
+      right: 5px;
     }
-    
-    .search-hotel__label {
-      float: left;
-      padding-top: 7px;
-      text-align: left;
-    }
-    
-    .search-hotel__input {
-      float: right;
-      width: 347px;
-      padding: {
-        top: 7px;
-        left: 12px;
-        bottom: 7px;
-        right: 5px;
-      }
-      background-color: #f2f2f2;
-      box-sizing: border-box;
-      border: none;
-      outline: none;
-    }
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  
+  &__input-block_number {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 54px;
   }
   
   &__number-block {
+    position: relative;
     outline: 1px solid red;
-    
-    .search-hotel__label_number {
-      margin-right: 30px;
-    }
-    
-    .search-hotel__input_number {
-      width: 98px;
-      text-align: center;
-    }
   }
   
   &__number-block_left {
-    float: left; 
+    width: 226px;
   }
   
   &__number-block_right {
-    float: right; 
+    width: 178px;
+  }
+  
+  &__label_number {
+    margin-right: 13px;
+  }
+  
+  &__input_number {
+    position: relative;
+    width: 115px;
+    text-align: center;
+  }
+  
+  &__icon-font {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  &__icon-font_calendar {
+    left: 98.5%;
+    font-size: 2em;
+    transform: translate(-98.5%, -50%);
+    outline: 1px solid red;
+  }
+  
+  &__icon-font_minus {
+    left: 58.5%;
+    transform: translate(-58.5%, -50%);
+    outline: 1px solid red;
+  }
+  
+  &__number-block_right &__icon-font_minus {
+    left: 46.5%;
+    transform: translate(-46.5%, -50%);
+    outline: 1px solid red;
+  }
+  
+  &__icon-font_plus {
+    left: 95%;
+    transform: translate(-95%, -50%);
+    outline: 1px solid red;
   }
   
   &__input_submit {
     width: 100%;
     padding: {
-      top: 20px;
-      bottom: 20px;
+      top: 16px;
+      bottom: 16px;
     }
     text-align: center;
     background-color: $sedona-blue;
   }
-  
 }
