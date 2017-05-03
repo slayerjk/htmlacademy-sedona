@@ -31,6 +31,7 @@
     width: 66.67%;
     /*check*/ }
   .features__block-part_blue {
+    height: 148px;
     padding-top: 55px;
     padding-bottom: 51px;
     background-color: #81b3d2; }
@@ -48,6 +49,7 @@
     display: block;
     margin-bottom: 22px; }
   .features__block-part_icon-decription {
+    height: 190px;
     padding-top: 55px;
     padding-bottom: 83px; }
     .features__block-part_icon-decription .features__block-part-icon {
@@ -64,6 +66,7 @@
     .features__block-part_icon-decription .features__block-part-icon_gift {
       background-position: -168px -5px; }
   .features__block-part_grey {
+    height: 256px;
     background-color: #eeeeee; }
   .features__block-part_decription {
     padding-top: 44px;
