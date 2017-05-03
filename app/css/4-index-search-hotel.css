@@ -13,28 +13,38 @@
   .search-hotel__sedona-h2 {
     margin-bottom: 30px; }
   .search-hotel__form {
-    position: absolute;
-    top: 235.5%;
+    outline: 1px solid red; }
+  .search-hotel__title-block, .search-hotel__form-content {
+    position: absolute; }
+  .search-hotel__title-block {
+    top: 100%;
     left: 50%;
     width: 570px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #766357;
+    cursor: pointer;
     -webkit-transform: translate(-50%, -100%);
         -ms-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
-    z-index: 1;
+    z-index: 3;
     outline: 1px solid red; }
-  .search-hotel__title-block {
-    padding-top: 29px;
-    padding-bottom: 32px;
-    text-align: center;
-    background-color: #766357; }
   .search-hotel__sedona-h3 {
     color: #fff; }
   .search-hotel__form-content {
+    top: 101%;
+    left: 50%;
+    width: 458px;
     padding-top: 54px;
     padding-left: 57px;
     padding-bottom: 50px;
     padding-right: 55px;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2; }
   .search-hotel__input-block {
     position: relative;
     width: 100%;

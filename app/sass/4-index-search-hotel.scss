@@ -14,22 +14,28 @@
   }
   
   &__form {
-    position: absolute;
-    top: 235.5%;
-    left: 50%;
-    width: 570px;
-    transform: translate(-50%, -100%);
-    z-index: 1;
     outline: 1px solid red;
   }
   
+  &__title-block,
+  &__form-content {
+    position: absolute;
+  }
+  
   &__title-block {
+    top: 100%;
+    left: 50%;
+    width: 570px;
     padding: {
       top: 29px;
-      bottom: 32px;
+      bottom: 30px;
     }
     text-align: center;
     background-color: #766357;
+    cursor: pointer;
+    transform: translate(-50%, -100%);
+    z-index: 3;
+    outline: 1px solid red;
   }
   
   &__sedona-h3 {
@@ -37,6 +43,9 @@
   }
   
   &__form-content {
+    top: 101%;
+    left: 50%;
+    width: 458px;
     padding: {
       top: 54px;
       left: 57px;
@@ -44,6 +53,8 @@
       right: 55px;
     }
     background-color: #fff;
+    transform: translateX(-50%);
+    z-index: 2;
   }
   
   &__input-block {

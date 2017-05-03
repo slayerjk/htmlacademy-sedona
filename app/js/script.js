@@ -11,7 +11,14 @@ $(document).ready(function () {
       event.returnValue = false;
     }
   };
+  
+  /*Search-hotel slide form*/
+  $('.search-hotel__form-content').show();/*check*/
+  
+  $('.search-hotel__title-block').on('click', function () {
+    $('.search-hotel__form-content').slideToggle();
+  });
+  
 /*-------------------------------------------------------*/
-
 
 });
