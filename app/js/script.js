@@ -1,5 +1,4 @@
 /*global $, jQuery*/
-
 $(document).ready(function () {
   'use strict';
 
@@ -12,11 +11,22 @@ $(document).ready(function () {
     }
   };
   
-  /*Search-hotel slide form*/
+  /*Search-hotel Sliding(up/down) form*/
   $('.search-hotel__form-content').show();/*check*/
   
   $('.search-hotel__title-block').on('click', function () {
     $('.search-hotel__form-content').slideToggle();
+  });
+  
+  /*Search-hotel jQuery Datepicker*/
+  $.datepicker.setDefaults($.datepicker.regional[""]);
+  $.datepicker.setDefaults($.datepicker.regional["ru"]);
+  
+  $(function () {
+    $('.search-hotel__input_date, .search-hotel__icon-fon_calendar').datepicker({
+      dateFormat: 'dd MM yy',
+      minDate: new Date()
+    });
   });
   
 /*-------------------------------------------------------*/

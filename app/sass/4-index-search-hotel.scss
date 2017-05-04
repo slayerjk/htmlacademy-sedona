@@ -13,13 +13,10 @@
     margin-bottom: 30px;
   }
   
-  &__form {
-    outline: 1px solid red;
-  }
-  
   &__title-block,
   &__form-content {
     position: absolute;
+    box-shadow: 0 0 5px 5px rgba(0, 0 , 0, 0.1);
   }
   
   &__title-block {
@@ -60,8 +57,12 @@
   &__input-block {
     position: relative;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
     outline: 1px solid red;
+  }
+  
+  &__input-block:nth-of-type(2) {
+    margin-bottom: 32px;
   }
   
   &__label,
@@ -73,7 +74,7 @@
   
   &__label {
     float: left;
-    padding-top: 7px;
+    padding-top: 5px;
     text-align: left;
   }
   
@@ -81,7 +82,7 @@
     float: right;
     width: 347px;
     padding: {
-      top: 7px;
+      top: 5px;
       left: 12px;
       bottom: 7px;
       right: 5px;
@@ -90,6 +91,13 @@
     box-sizing: border-box;
     border: none;
     outline: none;
+  }
+  
+  &__input::-webkit-input-placeholder,
+  &__input:-moz-placeholder,
+  &__input::-moz-placeholder,
+  &__input:-ms-input-placeholder {
+    color: #333333;
   }
   
   &__input-block_number {

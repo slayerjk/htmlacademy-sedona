@@ -1,0 +1,10 @@
+/*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
+/*---------------------------------------------*/
+.map {
+  height: 593px;
+  outline: 2px solid red; }
+  .map__img {
+    height: 593px; }

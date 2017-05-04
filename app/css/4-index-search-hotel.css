@@ -12,10 +12,10 @@
   text-align: center; }
   .search-hotel__sedona-h2 {
     margin-bottom: 30px; }
-  .search-hotel__form {
-    outline: 1px solid red; }
   .search-hotel__title-block, .search-hotel__form-content {
-    position: absolute; }
+    position: absolute;
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1); }
   .search-hotel__title-block {
     top: 100%;
     left: 50%;
@@ -48,8 +48,10 @@
   .search-hotel__input-block {
     position: relative;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
     outline: 1px solid red; }
+  .search-hotel__input-block:nth-of-type(2) {
+    margin-bottom: 32px; }
   .search-hotel__label, .search-hotel__input {
     font-size: 1.4em;
     line-height: 1.85714em;
@@ -59,12 +61,12 @@
     text-transform: uppercase; }
   .search-hotel__label {
     float: left;
-    padding-top: 7px;
+    padding-top: 5px;
     text-align: left; }
   .search-hotel__input {
     float: right;
     width: 347px;
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 12px;
     padding-bottom: 7px;
     padding-right: 5px;
@@ -73,6 +75,8 @@
             box-sizing: border-box;
     border: none;
     outline: none; }
+  .search-hotel__input::-webkit-input-placeholder, .search-hotel__input:-moz-placeholder, .search-hotel__input::-moz-placeholder, .search-hotel__input:-ms-input-placeholder {
+    color: #333333; }
   .search-hotel__input-block_number {
     display: -webkit-box;
     display: -webkit-flex;
