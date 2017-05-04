@@ -24,12 +24,10 @@
           flex-wrap: wrap; }
   .features__block-part {
     width: 33.33%;
-    /*check*/
     text-align: center;
     outline: 1px solid red; }
   .features__block-part_bg {
-    width: 66.67%;
-    /*check*/ }
+    width: 66.67%; }
   .features__block-part_blue {
     height: 148px;
     padding-top: 55px;
@@ -44,7 +42,8 @@
     margin-bottom: 24px; }
   .features__sedona-description {
     line-height: 1.5em;
-    /*21*/ }
+    /*21*/
+    padding: 0 12%; }
   .features__sedona-description_number {
     display: block;
     margin-bottom: 22px; }
@@ -66,8 +65,10 @@
     .features__block-part_icon-decription .features__block-part-icon_gift {
       background-position: -168px -5px; }
   .features__block-part_grey {
-    height: 256px;
+    height: 148px;
     background-color: #eeeeee; }
+    .features__block-part_grey .features__sedona-description {
+      padding: 0 15.5%; }
   .features__block-part_decription {
     padding-top: 44px;
     padding-bottom: 60px; }

@@ -5,7 +5,7 @@
 /*---------------------------------------------*/
 .search-hotel {
   position: relative;
-  padding-top: 53px;
+  padding-top: 59px;
   /*check*/
   padding-bottom: 131px;
   /*check*/
@@ -38,7 +38,7 @@
     width: 458px;
     padding-top: 54px;
     padding-left: 57px;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
     padding-right: 55px;
     background-color: #fff;
     -webkit-transform: translateX(-50%);
@@ -86,7 +86,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 54px; }
+    margin-bottom: 52px; }
   .search-hotel__number-block {
     position: relative;
     outline: 1px solid red; }
