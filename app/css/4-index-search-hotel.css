@@ -117,6 +117,7 @@
     -webkit-transform: translate(-98.5%, -50%);
         -ms-transform: translate(-98.5%, -50%);
             transform: translate(-98.5%, -50%);
+    cursor: auto;
     outline: 1px solid red; }
   .search-hotel__icon-font_minus {
     left: 58.5%;

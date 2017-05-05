@@ -12,6 +12,13 @@
   }
   &__block-part_bg {
     width: 66.67%;
+    height: 256px;
+  }
+  &__block-part_bg_1 {
+    background: #fff url('../img/features__bg_1.png') no-repeat center;
+  }
+  &__block-part_bg_2 {
+    background: #fff url('../img/features__bg_2.png') no-repeat center;
   }
   &__block-part_blue {
     height: 148px;
@@ -41,7 +48,7 @@
   &__block-part_icon-decription {
     height: 190px;
     padding: {
-      top: 55px;
+      top: 59px;
       bottom: 83px;
     }
     .features__block-part-icon {
@@ -75,5 +82,14 @@
       top: 44px;
       bottom: 60px;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features__block-part_bg_1 {
+    background-image: url('../img/features__bg_1_768.png');
+  }
+  .features__block-part_bg_2 {
+    background-image: url('../img/features__bg_2_768.png');
   }
 }
