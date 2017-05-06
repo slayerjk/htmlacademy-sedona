@@ -1,0 +1,16 @@
+@import "sass-common.scss";
+
+.sorting {
+  outline: 1px solid red;
+  
+  &__results {
+    @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
+    text-transform: uppercase;
+  }
+  
+  &__title,
+  &__link {
+    @include font(1.2em, 1.5em, "PT Sans", #000);//12/18//
+    text-transform: uppercase;
+  }
+}

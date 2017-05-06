@@ -1,0 +1,25 @@
+@import "sass-common.scss";
+
+.filter {
+  outline: 1px solid red;
+  
+  &__col-title {
+    @include font(1.6em, 1.3125em, "PT Sans Bold", #fff);//16/21//
+    text-transform: uppercase;
+  }
+  
+  &__label {
+    @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-transform: uppercase;
+  }
+  
+  &__range-value {
+    @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-transform: uppercase;
+  }
+  
+  &__input-submit {
+    @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-transform: uppercase;
+  }
+}

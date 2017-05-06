@@ -1,0 +1,22 @@
+@import "sass-common.scss";
+
+.search-results {
+  outline: 1px solid red;
+  
+  &__name {
+    @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
+    text-transform: uppercase;
+  }
+  
+  &__description,
+  &__price,
+  &__rating {
+    @include font(1.4em, 1.5em, "PT Sans", #333333);//14/21//
+    text-transform: uppercase;
+  }
+  
+  &__btn {
+    @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-transform: uppercase;
+  }
+}

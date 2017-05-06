@@ -19,7 +19,9 @@
   <!--<link href="css/style.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="css/1-header-menu.css">
   <link rel="stylesheet" href="css/6-footer.css">
-  <link rel="stylesheet" href="css/7-hotels.css">
+  <link rel="stylesheet" href="css/7-hotels-filter.css">
+  <link rel="stylesheet" href="css/7-hotels-sorting.css">
+  <link rel="stylesheet" href="css/7-hotels-results.css">
 
   <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
   <!--<link href="FONT" rel="stylesheet">-->
@@ -33,27 +35,27 @@
 
   <div class="body__container">
 
-    <header class="header-menu">
-      <div class="header-menu__wrapper clearfix">
+    <header class="header-menu clearfix">
+      <div class="header-menu__wrapper">
         <div class="header-menu__logo">
           <a class="header-menu__logo-link" href="index.html">
             <img class="header-menu__logo-img" src="img/header__logo.png" width="67" height="56" alt="logo">  
           </a>
         </div>
-        <ul class="header-menu__col header-menu__col_left">
-          <li class="header-menu__li">
+        <ul class="header-menu__col header-menu__col_left clearfix">
+          <li class="header-menu__li header-menu__li_left">
             <a href="#" class="header-menu__link">Информация</a>
           </li>
-          <li class="header-menu__li">
+          <li class="header-menu__li header-menu__li_right">
             <a href="#" class="header-menu__link">Фото и видео</a>
           </li>
         </ul>
         <ul class="header-menu__col header-menu__col_right">
-          <li class="header-menu__li">
+          <li class="header-menu__li header-menu__li_left">
             <a href="#" class="header-menu__link">Карта штата</a>
           </li>
-          <li class="header-menu__li">
-            <a href="#" class="header-menu__link">Гостиницы</a>
+          <li class="header-menu__li header-menu__li_right">
+            <a href="hotels.html" class="header-menu__link header-menu__link_active">Гостиницы</a>
           </li>
         </ul>
       </div>
@@ -91,7 +93,7 @@
               <div class="filter__range-toggle filter__range-toggle_right"></div>
             </div>
           </div>
-          <input class="filter__input filter__input_submit" type="submit">
+          <input class="filter__input filter__input_submit" type="submit" value="Показать">
         </div>
       </form>
       
@@ -111,99 +113,99 @@
     </div>  
     
     <div class="search-results">
-      <div class="hotel clearfix">
-        <div class="hotel__col_left">
-          <a class="hotel__details-img" href="#">
-            <img class="hotel__img" width="150" height="50" alt="hotel img">
+      <div class="search-result clearfix">
+        <div class="search-result__col_left">
+          <a class="search-result__details-img" href="#">
+            <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
-          <h2 class="hotel__name">Amara Resort & Spa</h2>
-          <div class="hotel__details">
-            <span class="search-results__description">Гостиница</span>
-            <span class="search-results__price">От 3500 Р.</span>
+          <h2 class="search-result__name">Amara Resort & Spa</h2>
+          <div class="search-result__details">
+            <span class="search-result__description">Гостиница</span>
+            <span class="search-result__price">От 3500 Р.</span>
           </div>
-          <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn_details" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn_to-book" href="#">Забронировать</a>
+          <div class="search-result__btns">
+            <a class="search-result__btn search-result__btn_details" href="#">Подробнее</a>
+            <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="hotel__col_right">
-          <ul class="hotel__stars">
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+        <div class="search-result__col_right">
+          <ul class="search-result__stars">
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
           </ul>
-          <div class="hotel__rating-block">
-            <span class="hotel__rating">Рейтинг: 8,5</span>
+          <div class="search-result__rating-block">
+            <span class="search-result__rating">Рейтинг: 8,5</span>
           </div>
         </div>
       </div>
-      <div class="hotel clearfix">
-        <div class="hotel__col_left">
-          <a class="hotel__details-img" href="#">
-            <img class="hotel__img" width="150" height="50" alt="hotel img">
+      <div class="search-result clearfix">
+        <div class="search-result__col_left">
+          <a class="search-result__details-img" href="#">
+            <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
-          <h2 class="hotel__name">Desert Quail Inn</h2>
-          <div class="hotel__details">
-            <span class="search-results__description">Мотель</span>
-            <span class="search-results__price">От 2000 Р.</span>
+          <h2 class="search-result__name">Desert Quail Inn</h2>
+          <div class="search-result__details">
+            <span class="search-result__description">Мотель</span>
+            <span class="search-result__price">От 2000 Р.</span>
           </div>
-          <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn_details" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn_to-book" href="#">Забронировать</a>
+          <div class="search-result__btns">
+            <a class="search-result__btn search-result__btn_details" href="#">Подробнее</a>
+            <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="hotel__col_right">
-          <ul class="hotel__stars">
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+        <div class="search-result__col_right">
+          <ul class="search-result__stars">
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
           </ul>
-          <div class="hotel__rating-block">
-            <span class="hotel__rating">Рейтинг: 8,9</span>
+          <div class="search-result__rating-block">
+            <span class="search-result__rating">Рейтинг: 8,9</span>
           </div>
         </div>
       </div>
-      <div class="hotel clearfix">
-        <div class="hotel__col_left">
-          <a class="hotel__details-img" href="#">
-            <img class="hotel__img" width="150" height="50" alt="hotel img">
+      <div class="search-results clearfix">
+        <div class="search-result__col_left">
+          <a class="search-result__details-img" href="#">
+            <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
-          <h2 class="hotel__name">Villas At Poco Diablo</h2>
-          <div class="hotel__details">
-            <span class="search-results__description">Апартаменты</span>
-            <span class="search-results__price">От 4000 Р.</span>
+          <h2 class="search-result__name">Villas At Poco Diablo</h2>
+          <div class="search-result__details">
+            <span class="search-result__description">Апартаменты</span>
+            <span class="search-result__price">От 4000 Р.</span>
           </div>
-          <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn_details" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn_to-book" href="#">Забронировать</a>
+          <div class="search-result__btns">
+            <a class="search-result__btn search-result__btn_details" href="#">Подробнее</a>
+            <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="hotel__col_right">
-          <ul class="hotel__stars">
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+        <div class="search-result__col_right">
+          <ul class="search-result__stars">
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
-            <li class="hotel__li">
-              <span class="icon-star hotel__icon-font"></span>
+            <li class="search-result__li">
+              <span class="icon-star search-result__icon-font"></span>
             </li>
           </ul>
-          <div class="hotel__rating-block">
-            <span class="hotel__rating">Рейтинг: 9,2</span>
+          <div class="search-result__rating-block">
+            <span class="search-result__rating">Рейтинг: 9,2</span>
           </div>
         </div>
       </div>
@@ -227,9 +229,7 @@
         </div>
         <div class="footer__wrapper-block footer__made-by clearfix">
           <span class="sedona-description footer__sedona-description">Website by</span>
-          <a class="footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru">
-            <img class="footer__made-by-img" src="img/footer__made-by-logo.png" width="113" height="39" alt="htmlacademy logo">
-          </a>
+          <a class="footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru"></a>
         </div>
       </div>
     </footer>

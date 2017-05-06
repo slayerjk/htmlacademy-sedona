@@ -91,6 +91,15 @@
     box-sizing: border-box;
     border: none;
     outline: none;
+    
+    &:hover {
+      background-color: #ebebeb;
+    }
+    
+    &:focus {
+      background-color: #fff;
+      outline: 2px solid #e5e5e5;
+    }
   }
   
   &__input::-webkit-input-placeholder,
@@ -134,9 +143,17 @@
     position: absolute;
     top: 50%;
     font-size: 1.5em;
+    color: $sedona-grey;
     cursor: pointer;
-    opacity: 0.3;
     z-index: 1;
+    
+    &:hover {
+      color: #000;
+    }
+    
+    &:active {
+      color: $sedona-blue;
+    }
   }
   
   &__icon-font_calendar {
@@ -171,7 +188,19 @@
       top: 16px;
       bottom: 16px;
     }
+    color: $sedona-font-color;
     text-align: center;
     background-color: $sedona-blue;
+    
+    &:hover {
+      color: $sedona-font-color_hover;
+      background-color: $sedona-blue_hover;
+    }
+  
+    &:active {
+      color: $sedona-font-color_active;
+      background-color: $sedona-blue_active;
+    }
   }
+  
 }

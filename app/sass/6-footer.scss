@@ -54,6 +54,23 @@
     height: 48px;
     text-align: center;
     background-color: $sedona-blue;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $sedona-blue_hover;
+      
+      .footer__social-icon-font {
+        color: $sedona-font-color_hover;  
+      }
+    }
+  
+    &:active {
+      background-color: $sedona-blue_active;
+      
+      .footer__social-icon-font {
+        color: $sedona-font-color_active;
+      }
+    }
   }
   
   &__social-link:last-of-type {
@@ -80,6 +97,22 @@
       margin-right: 9px;
       padding-top: 6px;
       outline: 1px solid red;
+    }
+  }
+  
+  &__made-by-link {
+    width: 113px;
+    height: 39px;
+    background: #fff url(../img/footer__made-by-logo.png) no-repeat center;
+    outline: 1px solid red;
+    
+    &:hover {
+      background: #fff url(../img/footer__made-by-logo_hvr.png) no-repeat center;
+    }
+    
+    &:active {
+      background: #fff url(../img/footer__made-by-logo.png) no-repeat center;
+      opacity: 0.3;
     }
   }
 }

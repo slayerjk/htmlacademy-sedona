@@ -1,0 +1,31 @@
+/*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
+/*---------------------------------------------*/
+.filter {
+  outline: 1px solid red; }
+  .filter__col-title {
+    font-size: 1.6em;
+    line-height: 1.3125em;
+    font-family: "PT Sans Bold", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }
+  .filter__label {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }
+  .filter__range-value {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }
+  .filter__input-submit {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }

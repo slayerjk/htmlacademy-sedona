@@ -1,0 +1,25 @@
+/*SASS-----------------------------------------*/
+/*Mixins*/
+/*Templates*/
+/*Variables*/
+/*---------------------------------------------*/
+.search-results {
+  outline: 1px solid red; }
+  .search-results__name {
+    font-size: 2.1em;
+    line-height: 1.2381em;
+    font-family: "PT Sans Bold", Arial, sans-serif;
+    color: #000;
+    text-transform: uppercase; }
+  .search-results__description, .search-results__price, .search-results__rating {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #333333;
+    text-transform: uppercase; }
+  .search-results__btn {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }

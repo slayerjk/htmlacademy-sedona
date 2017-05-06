@@ -75,6 +75,11 @@
             box-sizing: border-box;
     border: none;
     outline: none; }
+    .search-hotel__input:hover {
+      background-color: #ebebeb; }
+    .search-hotel__input:focus {
+      background-color: #fff;
+      outline: 2px solid #e5e5e5; }
   .search-hotel__input::-webkit-input-placeholder, .search-hotel__input:-moz-placeholder, .search-hotel__input::-moz-placeholder, .search-hotel__input:-ms-input-placeholder {
     color: #333333; }
   .search-hotel__input-block_number {
@@ -108,9 +113,13 @@
     position: absolute;
     top: 50%;
     font-size: 1.5em;
+    color: #a9a9a9;
     cursor: pointer;
-    opacity: 0.3;
     z-index: 1; }
+    .search-hotel__icon-font:hover {
+      color: #000; }
+    .search-hotel__icon-font:active {
+      color: #81b3d2; }
   .search-hotel__icon-font_calendar {
     left: 98.5%;
     font-size: 2em;
@@ -141,5 +150,12 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     background-color: #81b3d2; }
+    .search-hotel__input_submit:hover {
+      color: white;
+      background-color: #669ec0; }
+    .search-hotel__input_submit:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd; }

@@ -13,16 +13,7 @@
   /*25px;*/
   padding-right: 6%;
   /*72*/
-  outline: 1px solid red;
-  /*
-  &__col_left &__li:first-of-type {
-    margin-right: 28%;//144
-  }
-  
-  &__col_right &__li:last-of-type {
-    //margin-left: 31.5%;//161
-  }
-  */ }
+  outline: 1px solid red; }
   .header-menu__wrapper {
     position: relative;
     width: 100%;
@@ -68,6 +59,17 @@
     /*14/26*/
     text-transform: uppercase;
     outline: 1px solid red; }
+    .header-menu__link:hover {
+      color: #81b3d2; }
+    .header-menu__link:active {
+      color: #000;
+      opacity: 0.3; }
+  .header-menu__link_active {
+    color: #766357; }
+    .header-menu__link_active:hover {
+      color: #604e43; }
+    .header-menu__link_active:active {
+      opacity: 0.3; }
 
 @media only screen and (max-width: 768px) {
   .header-menu__col_left {
