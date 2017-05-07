@@ -22,8 +22,8 @@ $(document).ready(function () {
   $.datepicker.setDefaults($.datepicker.regional[""]);
   $.datepicker.setDefaults($.datepicker.regional["ru"]);
   
-  $(function () {
-    $('.search-hotel__input_date, .search-hotel__icon-fon_calendar').datepicker({
+  $('.search-hotel__input_date, .search-hotel__icon-font_calendar').on('click', function () {
+    $('.search-hotel__input_date').datepicker({
       dateFormat: 'dd MM yy',
       minDate: new Date()
     });

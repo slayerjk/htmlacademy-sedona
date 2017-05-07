@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/6-footer.css">
   <link rel="stylesheet" href="css/7-hotels-filter.css">
   <link rel="stylesheet" href="css/7-hotels-sorting.css">
-  <link rel="stylesheet" href="css/7-hotels-results.css">
+  <link rel="stylesheet" href="css/7-hotels-search-results.css">
 
   <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
   <!--<link href="FONT" rel="stylesheet">-->
@@ -65,32 +65,46 @@
       <form class="filter">
         <div class="filter__col filter__col_checkboxes">
           <h3 class="filter__col-title">Инфраструктура:</h3>
-          <input id="pool" class="filter__input" name="infrastructure" type="checkbox">
-          <label for="pool" class="filter__label">Бассейн</label>
-          <input id="parking" class="filter__input" name="infrastructure" type="checkbox">
-          <label for="parking" class="filter__label">Парковка</label>
-          <input id="wi-fi" class="filter__input" name="infrastructure" type="checkbox">
-          <label for="wi-fi" class="filter__label">Wi-fi</label>
+          <div class="filter__input-block">
+            <input id="pool" class="filter__input" name="infrastructure" type="checkbox">
+            <label for="pool" class="filter__label">Бассейн</label>
+          </div>
+          <div class="filter__input-block">
+            <input id="parking" class="filter__input" name="infrastructure" type="checkbox">
+            <label for="parking" class="filter__label">Парковка</label>
+          </div>
+          <div class="filter__input-block">
+            <input id="wi-fi" class="filter__input" name="infrastructure" type="checkbox">
+            <label for="wi-fi" class="filter__label">Wi-fi</label>
+          </div>
         </div>
         <div class="filter__col filter__col_checkboxes">
           <h3 class="filter__col-title">Тип жилья:</h3>
-          <input id="hotel" class="filter__input" name="hotel-type" type="checkbox">
-          <label for="hotel" class="filter__label">Гостиница</label>
-          <input id="motel" class="filter__input" name="hotel-type" type="checkbox">
-          <label for="motel" class="filter__label">Мотель</label>
-          <input id="apartments" class="filter__input" name="hotel-type" type="checkbox">
-          <label for="apartments" class="filter__label">Аппартменты</label>
+          <div class="filter__input-block">
+            <input id="hotel" class="filter__input" name="hotel-type" type="checkbox">
+            <label for="hotel" class="filter__label">Гостиница</label>
+          </div>
+          <div class="filter__input-block">
+            <input id="motel" class="filter__input" name="hotel-type" type="checkbox">
+            <label for="motel" class="filter__label">Мотель</label>
+          </div>
+          <div class="filter__input-block">
+            <input id="apartments" class="filter__input" name="hotel-type" type="checkbox">
+            <label for="apartments" class="filter__label">Аппартменты</label>
+          </div>
         </div>
         <div class="filter__col filter__col_range">
           <h3 class="filter__col-title">Стоимость в сутки(Р):</h3>
-          <div class="filter__range">
-            <div class="filter__range-value filter__range-value_from">От 0</div>
-            <div class="filter__range-value filter__range-value_to">До 3000</div>
-            <div class="filter__range-wrapper">
-              <div class="filter__range-scale"></div>
-              <div class="filter__range-bar"></div>
-              <div class="filter__range-toggle filter__range-toggle_left"></div>
-              <div class="filter__range-toggle filter__range-toggle_right"></div>
+          <div class="filter__input-block">
+            <div class="filter__range">
+              <div class="filter__range-value filter__range-value_from">От 0</div>
+              <div class="filter__range-value filter__range-value_to">До 3000</div>
+              <div class="filter__range-wrapper">
+                <div class="filter__range-scale"></div>
+                <div class="filter__range-bar"></div>
+                <div class="filter__range-toggle filter__range-toggle_left"></div>
+                <div class="filter__range-toggle filter__range-toggle_right"></div>
+              </div>
             </div>
           </div>
           <input class="filter__input filter__input_submit" type="submit" value="Показать">
@@ -98,26 +112,34 @@
       </form>
       
       <div class="sorting">
-        <h2 class="sorting__results">Найдено: 3</h2>
-        <span class="sorting__title">Сортировка:</span>
-        <a class="sorting__link" href="#">По цене</a>
-        <a class="sorting__link" href="#">По типу</a>
-        <a class="sorting__link" href="#">По рейтингу</a>
-        <a class="sorting__link" href="#">
-          <span class="icon-up-dir sorting__icon-font sorting__icon-font_up"></span>
-        </a>
-        <a class="sorting__link" href="#">
-          <span class="icon-down-dir sorting__icon-font sorting__icon-font_down"></span>  
-        </a>
+        <div class="sorting__block sorting__block_title">
+          <h2 class="sorting__results">Найдено: 3</h2>
+        </div>
+        <div class="sorting__block sorting__block_categories">
+          <span class="sorting__title">Сортировка:</span>
+          <a class="sorting__link" href="#">По цене</a>
+          <a class="sorting__link" href="#">По типу</a>
+          <a class="sorting__link" href="#">По рейтингу</a>
+        </div>
+        <div class="sorting__block sorting__block_arrows">
+          <a class="sorting__link" href="#">
+            <span class="icon-up-dir sorting__icon-font sorting__icon-font_up"></span>
+          </a>
+          <a class="sorting__link" href="#">
+            <span class="icon-down-dir sorting__icon-font sorting__icon-font_down"></span>  
+          </a>
+        </div>
       </div>
     </div>  
     
     <div class="search-results">
-      <div class="search-result clearfix">
-        <div class="search-result__col_left">
+      <div class="search-result">
+        <div class="search-result__col search-result__col_img">
           <a class="search-result__details-img" href="#">
             <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
+        </div>
+        <div class="search-result__col search-result__col_description">
           <h2 class="search-result__name">Amara Resort & Spa</h2>
           <div class="search-result__details">
             <span class="search-result__description">Гостиница</span>
@@ -128,7 +150,7 @@
             <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="search-result__col_right">
+        <div class="search-result__col search-result__col_rating">
           <ul class="search-result__stars">
             <li class="search-result__li">
               <span class="icon-star search-result__icon-font"></span>
@@ -148,11 +170,14 @@
           </div>
         </div>
       </div>
-      <div class="search-result clearfix">
-        <div class="search-result__col_left">
+      <div class="search-result">
+        <div class="search-result__col search-result__col_img">
           <a class="search-result__details-img" href="#">
             <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
+        </div>
+        <div class="search-result__col search-result__col_description">
+          
           <h2 class="search-result__name">Desert Quail Inn</h2>
           <div class="search-result__details">
             <span class="search-result__description">Мотель</span>
@@ -163,7 +188,7 @@
             <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="search-result__col_right">
+        <div class="search-result__col search-result__col_rating">
           <ul class="search-result__stars">
             <li class="search-result__li">
               <span class="icon-star search-result__icon-font"></span>
@@ -177,11 +202,13 @@
           </div>
         </div>
       </div>
-      <div class="search-results clearfix">
-        <div class="search-result__col_left">
+      <div class="search-result">
+        <div class="search-result__col search-result__col_img">
           <a class="search-result__details-img" href="#">
             <img class="search-result__img" width="150" height="50" alt="hotel img">
           </a>
+        </div>
+        <div class="search-result__col search-result__col_description">
           <h2 class="search-result__name">Villas At Poco Diablo</h2>
           <div class="search-result__details">
             <span class="search-result__description">Апартаменты</span>
@@ -192,7 +219,7 @@
             <a class="search-result__btn search-result__btn_to-book" href="#">Забронировать</a>
           </div>
         </div>
-        <div class="search-result__col_right">
+        <div class="search-result__col search-result__col_rating">
           <ul class="search-result__stars">
             <li class="search-result__li">
               <span class="icon-star search-result__icon-font"></span>

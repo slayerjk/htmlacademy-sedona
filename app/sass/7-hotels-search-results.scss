@@ -2,6 +2,34 @@
 
 .search-results {
   outline: 1px solid red;
+}
+
+.search-result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  outline: 1px solid red;
+  
+  &__col {
+    outline: 1px solid red;
+  }
+  
+  &__col_img {
+    width: 10%;//check  
+  }
+    
+  &__col_description {
+    width: 40%;//check
+  }
+    
+  &__col_rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: auto;
+    width: 20%;//check
+  }
   
   &__name {
     @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
@@ -16,7 +44,13 @@
   }
   
   &__btn {
+    display: inline-block;
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
     text-transform: uppercase;
+    outline: 1px solid red;
+  }
+  
+  &__li {
+    display: inline-block;
   }
 }

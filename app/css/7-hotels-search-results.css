@@ -5,21 +5,66 @@
 /*---------------------------------------------*/
 .search-results {
   outline: 1px solid red; }
-  .search-results__name {
+
+.search-result {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  outline: 1px solid red; }
+  .search-result__col {
+    outline: 1px solid red; }
+  .search-result__col_img {
+    width: 10%; }
+  .search-result__col_description {
+    width: 40%; }
+  .search-result__col_rating {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: auto;
+    width: 20%; }
+  .search-result__name {
     font-size: 2.1em;
     line-height: 1.2381em;
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #000;
     text-transform: uppercase; }
-  .search-results__description, .search-results__price, .search-results__rating {
+  .search-result__description, .search-result__price, .search-result__rating {
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: "PT Sans", Arial, sans-serif;
     color: #333333;
     text-transform: uppercase; }
-  .search-results__btn {
+  .search-result__btn {
+    display: inline-block;
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: "PT Sans", Arial, sans-serif;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    outline: 1px solid red; }
+  .search-result__li {
+    display: inline-block; }

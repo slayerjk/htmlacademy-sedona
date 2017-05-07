@@ -1,11 +1,26 @@
 @import "sass-common.scss";
 
 .sorting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
   outline: 1px solid red;
   
-  &__results {
-    @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
-    text-transform: uppercase;
+  &__block {
+    outline: 1px solid red;
+  }
+  
+  &__block_title {
+    width: 10%;//check
+  }
+  
+  &__block_categories {
+    width: 40%;//check
+  }
+  
+  &__block_arrows {
+    margin-left: auto;
+    width: 5%;//check
   }
   
   &__title,

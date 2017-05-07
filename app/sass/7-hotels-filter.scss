@@ -1,7 +1,21 @@
 @import "sass-common.scss";
 
 .filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0;
   outline: 1px solid red;
+  
+  &__col {
+    width: 20%;//check
+    outline: 1px solid red;
+  }
+  
+  &__col_range {
+    margin-left: auto;
+  }
   
   &__col-title {
     @include font(1.6em, 1.3125em, "PT Sans Bold", #fff);//16/21//
