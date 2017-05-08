@@ -1,6 +1,10 @@
 /*SASS-----------------------------------------*/
 /*Mixins*/
 /*Templates*/
+.filter__range-values::before {
+  position: absolute;
+  content: ""; }
+
 /*Variables*/
 /*---------------------------------------------*/
 .filter {
@@ -16,31 +20,98 @@
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 100%;
+  width: 88%;
+  min-height: 129px;
+  padding-top: 25px;
+  padding-left: 72px;
+  padding-bottom: 30px;
+  padding-right: 72px;
   background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0;
   outline: 1px solid red; }
   .filter__col {
     width: 20%;
     outline: 1px solid red; }
+  .filter__col:first-of-type {
+    margin-right: 42px; }
   .filter__col_range {
-    margin-left: auto; }
+    width: 329px;
+    margin-left: auto;
+    text-align: right; }
+  .filter__col-title:not(.filter__col-title_range) {
+    margin-bottom: 25px; }
   .filter__col-title {
     font-size: 1.6em;
     line-height: 1.3125em;
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #fff;
     text-transform: uppercase; }
+  .filter__input-block {
+    position: relative;
+    margin-bottom: 25px; }
+  .filter__input-block:last-of-type {
+    margin-bottom: 0; }
+  .filter__input {
+    display: none; }
+  .filter__icon-font, .filter__label {
+    cursor: pointer; }
+  .filter__icon-font {
+    position: absolute;
+    top: -11%;
+    left: -3%;
+    font-size: 2.5em;
+    color: #fff; }
   .filter__label {
+    position: relative;
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: "PT Sans", Arial, sans-serif;
     color: #fff;
+    padding-left: 40px;
     text-transform: uppercase; }
+  .filter #pool:checked ~ .filter__icon-font_checkbox-unchecked,
+  .filter #parking:checked ~ .filter__icon-font_checkbox-unchecked,
+  .filter #wi-fi:checked ~ .filter__icon-font_checkbox-unchecked,
+  .filter #hotel:checked ~ .filter__icon-font_checkbox-unchecked,
+  .filter #motel:checked ~ .filter__icon-font_checkbox-unchecked,
+  .filter #apartments:checked ~ .filter__icon-font_checkbox-unchecked {
+    display: none; }
+  .filter #pool:checked ~ .filter__icon-font_checkbox-checked,
+  .filter #parking:checked ~ .filter__icon-font_checkbox-checked,
+  .filter #wi-fi:checked ~ .filter__icon-font_checkbox-checked,
+  .filter #hotel:checked ~ .filter__icon-font_checkbox-checked,
+  .filter #motel:checked ~ .filter__icon-font_checkbox-checked,
+  .filter #apartments:checked ~ .filter__icon-font_checkbox-checked {
+    display: block;
+    left: -2.5%; }
+  .filter__col-title_range {
+    margin-bottom: 12px;
+    text-align: left; }
+  .filter__range-values {
+    position: relative;
+    float: right;
+    width: 95.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+  .filter__range-values::before {
+    top: 50%;
+    left: 49.6%;
+    width: 2px;
+    height: 80%;
+    background-color: #fff;
+    -webkit-transform: translate(-49.6%, -50%);
+        -ms-transform: translate(-49.6%, -50%);
+            transform: translate(-49.6%, -50%); }
   .filter__range-value {
+    display: inline-block;
+    width: 49.4%;
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: "PT Sans", Arial, sans-serif;
     color: #fff;
+    text-align: center;
     text-transform: uppercase; }
   .filter__input-submit {
     font-size: 1.4em;
@@ -48,3 +119,9 @@
     font-family: "PT Sans", Arial, sans-serif;
     color: #fff;
     text-transform: uppercase; }
+
+@media only screen and (width: 768px) {
+  .filter {
+    width: 92.5%;
+    padding-left: 45px;
+    padding-right: 45px; } }

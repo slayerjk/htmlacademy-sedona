@@ -4,17 +4,34 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  width: 100%;
+  width: 88%;
+  min-height: 129px;//215
+  padding: {
+    top: 25px;
+    left: 72px;
+    bottom: 30px;
+    right: 72px;
+  }
   background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0;
   outline: 1px solid red;
   
   &__col {
-    width: 20%;//check
+    width: 20%;//240px
     outline: 1px solid red;
   }
   
+  &__col:first-of-type {
+    margin-right: 42px;
+  }
+  
   &__col_range {
+    width: 329px;
     margin-left: auto;
+    text-align: right;
+  }
+  
+  &__col-title:not(&__col-title_range) {
+    margin-bottom: 25px;
   }
   
   &__col-title {
@@ -22,18 +39,108 @@
     text-transform: uppercase;
   }
   
+  &__input-block {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  &__input-block:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  &__input {
+    display: none;
+  }
+      
+  &__icon-font,
   &__label {
+    cursor: pointer;
+  }
+  
+  &__icon-font {
+    position: absolute;
+    top: -11%;
+    left: -3%;
+    font-size: 2.5em;
+    color: #fff;
+  }
+  
+  &__label {
+    position: relative;
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    padding-left: 40px;
     text-transform: uppercase;
   }
   
+  #pool:checked ~ .filter__icon-font_checkbox-unchecked,
+  #parking:checked ~ .filter__icon-font_checkbox-unchecked,
+  #wi-fi:checked ~ .filter__icon-font_checkbox-unchecked,
+  #hotel:checked ~ .filter__icon-font_checkbox-unchecked,
+  #motel:checked ~ .filter__icon-font_checkbox-unchecked,
+  #apartments:checked ~ .filter__icon-font_checkbox-unchecked {
+    display: none;
+  }
+  
+  #pool:checked ~ .filter__icon-font_checkbox-checked,
+  #parking:checked ~ .filter__icon-font_checkbox-checked,
+  #wi-fi:checked ~ .filter__icon-font_checkbox-checked,
+  #hotel:checked ~ .filter__icon-font_checkbox-checked,
+  #motel:checked ~ .filter__icon-font_checkbox-checked,
+  #apartments:checked ~ .filter__icon-font_checkbox-checked {
+    display: block;
+    left: -2.5%;
+  }
+  
+  &__col-title_range {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  &__range-values {
+    position: relative;
+    float: right;
+    width: 95.5%;
+    padding: {
+      top: 5px;
+      bottom: 5px;
+    }
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
+  
+  &__range-values::before {
+    @extend %pseudo;
+    top: 50%;
+    left: 49.6%;
+    width: 2px;
+    height: 80%;
+    background-color: #fff;
+    transform: translate(-49.6%, -50%);
+  }
+  
   &__range-value {
+    display: inline-block;
+    width: 49.4%;
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-align: center;
     text-transform: uppercase;
   }
   
   &__input-submit {
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .filter {
+    width: 92.5%;
+    padding: {
+      left: 45px;
+      right: 45px;
+    }
+    &__col {
+      
+    }
   }
 }

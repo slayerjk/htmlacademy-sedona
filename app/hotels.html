@@ -66,39 +66,53 @@
         <div class="filter__col filter__col_checkboxes">
           <h3 class="filter__col-title">Инфраструктура:</h3>
           <div class="filter__input-block">
-            <input id="pool" class="filter__input" name="infrastructure" type="checkbox">
+            <input id="pool" class="filter__input" name="infrastructure" type="checkbox" checked>
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="pool" class="filter__label">Бассейн</label>
           </div>
           <div class="filter__input-block">
             <input id="parking" class="filter__input" name="infrastructure" type="checkbox">
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="parking" class="filter__label">Парковка</label>
           </div>
           <div class="filter__input-block">
             <input id="wi-fi" class="filter__input" name="infrastructure" type="checkbox">
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="wi-fi" class="filter__label">Wi-fi</label>
           </div>
         </div>
         <div class="filter__col filter__col_checkboxes">
           <h3 class="filter__col-title">Тип жилья:</h3>
           <div class="filter__input-block">
-            <input id="hotel" class="filter__input" name="hotel-type" type="checkbox">
+            <input id="hotel" class="filter__input" name="hotel-type" type="checkbox" checked>
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="hotel" class="filter__label">Гостиница</label>
           </div>
           <div class="filter__input-block">
-            <input id="motel" class="filter__input" name="hotel-type" type="checkbox">
+            <input id="motel" class="filter__input" name="hotel-type" type="checkbox" checked>
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="motel" class="filter__label">Мотель</label>
           </div>
           <div class="filter__input-block">
-            <input id="apartments" class="filter__input" name="hotel-type" type="checkbox">
+            <input id="apartments" class="filter__input" name="hotel-type" type="checkbox" checked>
+            <span class="icon-check-on filter__icon-font filter__icon-font_checkbox-checked hidden"></span>
+            <span class="icon-check-off filter__icon-font filter__icon-font_checkbox-unchecked"></span>
             <label for="apartments" class="filter__label">Аппартменты</label>
           </div>
         </div>
         <div class="filter__col filter__col_range">
-          <h3 class="filter__col-title">Стоимость в сутки(Р):</h3>
+          <h3 class="filter__col-title filter__col-title_range">Стоимость в сутки (Р):</h3>
           <div class="filter__input-block">
             <div class="filter__range">
-              <div class="filter__range-value filter__range-value_from">От 0</div>
-              <div class="filter__range-value filter__range-value_to">До 3000</div>
+              <div class="filter__range-values">
+                <div class="filter__range-value filter__range-value_from">От 0</div>
+                <div class="filter__range-value filter__range-value_to">До 3000</div>
+              </div>
               <div class="filter__range-wrapper">
                 <div class="filter__range-scale"></div>
                 <div class="filter__range-bar"></div>
