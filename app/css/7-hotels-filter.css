@@ -1,7 +1,7 @@
 /*SASS-----------------------------------------*/
 /*Mixins*/
 /*Templates*/
-.filter__range-values::before {
+.filter__range-values::before, .filter__range-toggle::after {
   position: absolute;
   content: ""; }
 
@@ -20,21 +20,20 @@
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 88%;
   min-height: 129px;
   padding-top: 25px;
-  padding-left: 72px;
-  padding-bottom: 30px;
-  padding-right: 72px;
-  background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0;
-  outline: 1px solid red; }
+  padding-left: 6%;
+  padding-bottom: 32px;
+  padding-right: 6%;
+  background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0; }
   .filter__col {
     width: 20%;
     outline: 1px solid red; }
   .filter__col:first-of-type {
     margin-right: 42px; }
   .filter__col_range {
-    width: 329px;
+    position: relative;
+    width: 31%;
     margin-left: auto;
     text-align: right; }
   .filter__col-title:not(.filter__col-title_range) {
@@ -50,7 +49,7 @@
     margin-bottom: 25px; }
   .filter__input-block:last-of-type {
     margin-bottom: 0; }
-  .filter__input {
+  .filter__input:not(.filter__input_submit) {
     display: none; }
   .filter__icon-font, .filter__label {
     cursor: pointer; }
@@ -86,18 +85,20 @@
   .filter__col-title_range {
     margin-bottom: 12px;
     text-align: left; }
+  .filter__range-values, .filter__input_submit {
+    border: 2px solid #fff;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
   .filter__range-values {
     position: relative;
     float: right;
     width: 95.5%;
+    margin-bottom: 11px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 3px;
-            border-radius: 3px; }
+    padding-bottom: 5px; }
   .filter__range-values::before {
     top: 50%;
-    left: 49.6%;
+    left: 50.5%;
     width: 2px;
     height: 80%;
     background-color: #fff;
@@ -113,15 +114,68 @@
     color: #fff;
     text-align: center;
     text-transform: uppercase; }
-  .filter__input-submit {
+  .filter__range-wrapper {
+    position: relative;
+    float: right;
+    width: 95.5%;
+    height: 20px;
+    outline: 1px solid red; }
+  .filter__range-scale, .filter__range-bar, .filter__range-toggle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .filter__range-scale {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); }
+  .filter__range-bar {
+    width: 80%;
+    background-color: white; }
+  .filter__range-toggle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    cursor: pointer; }
+  .filter__range-toggle_left {
+    left: -1%; }
+  .filter__range-toggle_right {
+    left: 79.3%; }
+  .filter__range-toggle::after {
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .filter__input_submit {
+    position: absolute;
+    left: 49.7%;
+    bottom: 1%;
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: "PT Sans", Arial, sans-serif;
     color: #fff;
-    text-transform: uppercase; }
+    width: 137px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translateX(-49.7%);
+        -ms-transform: translateX(-49.7%);
+            transform: translateX(-49.7%); }
 
 @media only screen and (width: 768px) {
   .filter {
-    width: 92.5%;
-    padding-left: 45px;
-    padding-right: 45px; } }
+    padding-left: 8.11%;
+    padding-right: 8.11%; } }

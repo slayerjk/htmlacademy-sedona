@@ -4,16 +4,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  width: 88%;
   min-height: 129px;//215
   padding: {
     top: 25px;
-    left: 72px;
-    bottom: 30px;
-    right: 72px;
+    left: 6%;//72
+    bottom: 32px;
+    right: 6%;//72
   }
   background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0;
-  outline: 1px solid red;
   
   &__col {
     width: 20%;//240px
@@ -25,7 +23,8 @@
   }
   
   &__col_range {
-    width: 329px;
+    position: relative;
+    width: 31%;//329px;
     margin-left: auto;
     text-align: right;
   }
@@ -48,7 +47,7 @@
     margin-bottom: 0;
   }
   
-  &__input {
+  &__input:not(&__input_submit) {
     display: none;
   }
       
@@ -96,22 +95,27 @@
     text-align: left;
   }
   
+  &__range-values,
+  &__input_submit {
+    border: 2px solid #fff;
+    border-radius: 3px;  
+  }
+  
   &__range-values {
     position: relative;
     float: right;
     width: 95.5%;
+    margin-bottom: 11px;
     padding: {
       top: 5px;
       bottom: 5px;
     }
-    border: 2px solid #fff;
-    border-radius: 3px;
   }
   
   &__range-values::before {
     @extend %pseudo;
     top: 50%;
-    left: 49.6%;
+    left: 50.5%;
     width: 2px;
     height: 80%;
     background-color: #fff;
@@ -126,18 +130,84 @@
     text-transform: uppercase;
   }
   
-  &__input-submit {
+  &__range-wrapper {
+    position: relative;
+    float: right;
+    width: 95.5%;
+    height: 20px;
+    outline: 1px solid red;
+  }
+  
+  &__range-scale,
+  &__range-bar,
+  &__range-toggle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    transform: translateY(-50%);
+  }
+  
+  &__range-scale {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  &__range-bar {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  &__range-toggle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  &__range-toggle_left {
+    left: -1%;
+  }
+  
+  &__range-toggle_right {
+    left: 79.3%;
+  }
+  
+  &__range-toggle::after {
+    @extend %pseudo;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &__input_submit {
+    position: absolute;
+    left: 49.7%;
+    bottom: 1%;
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    width: 137px;
+    padding: {
+      top: 6px;
+      bottom: 5px;
+    }
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
     text-transform: uppercase;
+    transform: translateX(-49.7%);
   }
 }
 
 @media only screen and (width: 768px) {
   .filter {
-    width: 92.5%;
     padding: {
-      left: 45px;
-      right: 45px;
+      left: 8.11%;//45
+      right: 8.11%;//45
     }
     &__col {
       

@@ -2,17 +2,16 @@
 
 .footer {
   position: relative;
-  outline: 1px solid red;
-  
+    
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    max-width: 996px;
     width: 83%;
     height: 120px;
-    padding: 0 102px;
+    padding: 0 8.5%;//0 102
     background-color: #fff;
-    outline: 1px solid red;
   }
   
   &__wrapper_index {
@@ -26,7 +25,6 @@
   &__wrapper-block {
     padding-bottom: 37px;
     text-align: center;
-    outline: 1px solid red;
   }
   
   &__twitter-tag {

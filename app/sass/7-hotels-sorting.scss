@@ -1,31 +1,73 @@
 @import "sass-common.scss";
 
 .sorting {
+  position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
-  outline: 1px solid red;
+  align-items: baseline;
+  padding: {
+    top: 32px;
+    left: 71px;
+    bottom: 31px;
+    right: 71px;
+  }
   
   &__block {
     outline: 1px solid red;
   }
   
   &__block_title {
-    width: 10%;//check
-  }
-  
-  &__block_categories {
-    width: 40%;//check
-  }
-  
-  &__block_arrows {
-    margin-left: auto;
-    width: 5%;//check
+    margin-right: 4.6%;
+    @include font(1.2em, 1.5em, "PT Sans", #000);//12/18////check
+    text-transform: uppercase;
+    font-size: 1.4em;//check
+    line-height: 1.5em;//check
   }
   
   &__title,
   &__link {
     @include font(1.2em, 1.5em, "PT Sans", #000);//12/18//
     text-transform: uppercase;
+  }
+  
+  &__title {
+    margin-right: 38px;
+  }
+  
+  &__link:not(.sorting__link_arrow) {
+    margin-right: 30px;
+  }
+  
+  &__link:last-of-type {
+    margin-right: 0px;
+  }
+  
+  &__link_active {
+    color: $sedona-blue;
+  }
+  
+  &__block_arrows {
+    position: absolute;
+    top: 65%;
+    right: 5.5%;
+    margin-left: auto;
+    transform: translate(-5.5%, -65%);
+  }
+  
+  &__link_arrow {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid red;
+  }
+  
+  &__icon-font {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.1em;
+    color: rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%);
   }
 }

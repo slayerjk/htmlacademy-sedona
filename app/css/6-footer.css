@@ -4,8 +4,7 @@
 /*Variables*/
 /*---------------------------------------------*/
 .footer {
-  position: relative;
-  outline: 1px solid red; }
+  position: relative; }
   .footer__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -19,11 +18,11 @@
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    max-width: 996px;
     width: 83%;
     height: 120px;
-    padding: 0 102px;
-    background-color: #fff;
-    outline: 1px solid red; }
+    padding: 0 8.5%;
+    background-color: #fff; }
   .footer__wrapper_index {
     position: absolute;
     bottom: 0;
@@ -31,8 +30,7 @@
     background-color: rgba(255, 255, 255, 0.8); }
   .footer__wrapper-block {
     padding-bottom: 37px;
-    text-align: center;
-    outline: 1px solid red; }
+    text-align: center; }
   .footer__twitter-tag {
     padding-top: 46px;
     padding-left: 30px;

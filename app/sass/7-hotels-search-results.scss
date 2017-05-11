@@ -1,39 +1,60 @@
 @import "sass-common.scss";
 
-.search-results {
-  outline: 1px solid red;
-}
-
 .search-result {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  outline: 1px solid red;
+  padding: {
+    top: 26px;
+    left: 72px;
+    bottom: 24px;
+    right: 72px;
+  }
+  border: {
+    top: 1px solid rgba(0, 0, 0, 0.3);
+    bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  &:nth-of-type(2n) {
+    border: none;
+  }
   
   &__col {
+    height: 100px;
     outline: 1px solid red;
   }
   
   &__col_img {
-    width: 10%;//check  
+    height: 95px;
+    padding-top: 5px;
+    margin-right: 30px;
   }
-    
-  &__col_description {
-    width: 40%;//check
-  }
-    
-  &__col_rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: auto;
-    width: 20%;//check
+  
+  &__img {
+    height: 90px;
   }
   
   &__name {
+    margin-bottom: 8px;
     @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
     text-transform: uppercase;
+  }
+  
+  &__col_description {
+    width: 258px;
+  }
+  
+  &__description-wrapper {
+    width: 100%;
+    outline: 1px solid red;
+  }
+  
+  &__details-block {
+    float: left;
+  }
+  
+  &__price-block {
+    float: right;
   }
   
   &__description,
@@ -43,14 +64,79 @@
     text-transform: uppercase;
   }
   
+  &__description,
+  &__price {
+    display: block;
+    margin-bottom: 13px;
+  }
+    
   &__btn {
     display: inline-block;
+    padding: {
+      top: 3px;
+      bottom: 3px;
+    }
     @include font(1.4em, 1.5em, "PT Sans", #fff);//14/21//
+    text-align: center;
     text-transform: uppercase;
-    outline: 1px solid red;
+      
+    &__btn:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  &__btn_details {
+    width: 110px;
+    background-color: $sedona-blue;
+  }
+  
+  &__btn_to-book {
+    width: 142px;
+    background-color: $sedona-light-brown;
+  }
+  
+  &__col_rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 20%;
+    height: 95px;
+    margin-left: auto;
+    padding-bottom: 5px;
+    text-align: right;
+  }
+  
+  &__stars,
+  &__rating-block {
+    width: 100%;
+  }  
+  
+  &__stars {
+    float: right;  
   }
   
   &__li {
     display: inline-block;
+  }
+  
+  &__icon-font {
+    display: block;
+    font-size: 2em;
+    color: $sedona-blue;
+    outline: 1px solid red;
+  }
+  
+  &__rating {
+    float: right;
+    display: block;
+    width: 111px;
+    padding: {
+      top: 3px;
+      bottom: 3px;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
   }
 }
