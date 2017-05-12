@@ -8,29 +8,27 @@
 /*Variables*/
 /*---------------------------------------------*/
 .filter {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   min-height: 129px;
   padding-top: 25px;
-  padding-left: 6%;
   padding-bottom: 32px;
-  padding-right: 6%;
   background: #fff url(../img/hotels__filter-bg.png) no-repeat 0 0; }
+  .filter__inner-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .filter__col {
-    width: 20%;
     outline: 1px solid red; }
   .filter__col:first-of-type {
-    margin-right: 42px; }
+    margin-right: 9.75%; }
   .filter__col_range {
     position: relative;
     width: 31%;
@@ -141,21 +139,24 @@
     -webkit-border-radius: 50%;
             border-radius: 50%;
     cursor: pointer; }
+    .filter__range-toggle::after {
+      top: 50%;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .filter__range-toggle:hover .filter__range-toggle::after,
+    .filter__range-toggle:active .filter__range-toggle::after {
+      background-color: #1c4f80; }
   .filter__range-toggle_left {
     left: -1%; }
   .filter__range-toggle_right {
     left: 79.3%; }
-  .filter__range-toggle::after {
-    top: 50%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    background-color: rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
   .filter__input_submit {
     position: absolute;
     left: 49.7%;
@@ -174,8 +175,16 @@
     -webkit-transform: translateX(-49.7%);
         -ms-transform: translateX(-49.7%);
             transform: translateX(-49.7%); }
+    .filter__input_submit:hover {
+      color: #000;
+      background-color: #fff; }
+
+@media only screen and (max-width: 992px) {
+  .filter__range-value {
+    width: 48.9%; } }
 
 @media only screen and (width: 768px) {
-  .filter {
-    padding-left: 8.11%;
-    padding-right: 8.11%; } }
+  .filter__col:first-of-type {
+    margin-right: 12.3697916667%; }
+  .filter__col_range {
+    width: 230px; } }

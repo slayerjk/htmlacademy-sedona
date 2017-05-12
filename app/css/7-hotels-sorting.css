@@ -4,23 +4,22 @@
 /*Variables*/
 /*---------------------------------------------*/
 .sorting {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   padding-top: 32px;
-  padding-left: 71px;
-  padding-bottom: 31px;
-  padding-right: 71px; }
+  padding-bottom: 31px; }
+  .sorting__inner-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
   .sorting__block {
     outline: 1px solid red; }
   .sorting__block_title {
@@ -38,14 +37,20 @@
     font-family: "PT Sans", Arial, sans-serif;
     color: #000;
     text-transform: uppercase; }
+  .sorting__link {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px dotted #81b3d2; }
+    .sorting__link:hover {
+      color: #81b3d2; }
+    .sorting__link:active {
+      color: #000;
+      border-bottom: none; }
   .sorting__title {
     margin-right: 38px; }
   .sorting__link:not(.sorting__link_arrow) {
     margin-right: 30px; }
   .sorting__link:last-of-type {
     margin-right: 0px; }
-  .sorting__link_active {
-    color: #81b3d2; }
   .sorting__block_arrows {
     position: absolute;
     top: 65%;
@@ -59,7 +64,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    outline: 1px solid red; }
+    border: none; }
   .sorting__icon-font {
     position: absolute;
     top: 50%;
@@ -69,3 +74,10 @@
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+  .sorting__link_arrow:hover > .sorting__icon-font {
+    color: #000; }
+  .sorting__link_arrow:active > .sorting__icon-font {
+    color: #81b3d2; }
+  .sorting__link_active {
+    color: #81b3d2;
+    border-bottom: none; }

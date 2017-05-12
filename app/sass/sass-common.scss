@@ -8,6 +8,13 @@
 }
 
 /*Templates*/
+%center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 %pseudo {
   position: absolute;
   content: "";
@@ -22,5 +29,7 @@ $sedona-blue_hover: #669ec0;
 $sedona-blue_active: #5496bd;
 $sedona-light-brown : #766357;
 $sedona-brown : #604e43;
+$sedona-brown_hover : #604e43;
+$sedona-brown_active : #503e33;
 $sedona-grey: #a9a9a9;
 /*---------------------------------------------*/

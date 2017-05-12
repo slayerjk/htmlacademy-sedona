@@ -4,15 +4,11 @@
 /*Variables*/
 /*---------------------------------------------*/
 .header-menu {
-  width: 88%;
+  width: 100%;
   padding-top: 1.25%;
   /*15px;*/
-  padding-left: 6%;
-  /*72*/
   padding-bottom: 1.4166666667%;
   /*25px;*/
-  padding-right: 6%;
-  /*72*/
   outline: 1px solid red; }
   .header-menu__wrapper {
     position: relative;

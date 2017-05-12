@@ -1,15 +1,16 @@
 @import "sass-common.scss";
 
 .sorting {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
   padding: {
     top: 32px;
-    left: 71px;
     bottom: 31px;
-    right: 71px;
+  }
+  
+  &__inner-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
   
   &__block {
@@ -30,6 +31,20 @@
     text-transform: uppercase;
   }
   
+  &__link {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px dotted $sedona-blue;
+    
+    &:hover {
+      color: $sedona-blue;
+    }
+    
+    &:active {
+      color: #000;
+      border-bottom: none;
+    }
+  }
+  
   &__title {
     margin-right: 38px;
   }
@@ -40,10 +55,6 @@
   
   &__link:last-of-type {
     margin-right: 0px;
-  }
-  
-  &__link_active {
-    color: $sedona-blue;
   }
   
   &__block_arrows {
@@ -59,7 +70,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    outline: 1px solid red;
+    border: none;
   }
   
   &__icon-font {
@@ -69,5 +80,18 @@
     font-size: 2.1em;
     color: rgba(0, 0, 0, 0.3);
     transform: translate(-50%, -50%);
+  }
+  
+  &__link_arrow:hover > &__icon-font {
+    color: #000;
+  }
+    
+  &__link_arrow:active > &__icon-font {
+    color: $sedona-blue;
+  }
+  
+  &__link_active {
+    color: $sedona-blue;
+    border-bottom: none;
   }
 }

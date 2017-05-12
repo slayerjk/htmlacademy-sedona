@@ -1,27 +1,34 @@
 /*SASS-----------------------------------------*/
 /*Mixins*/
 /*Templates*/
+.search-result__icon-font {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 /*Variables*/
 /*---------------------------------------------*/
 .search-result {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   padding-top: 26px;
-  padding-left: 72px;
   padding-bottom: 24px;
-  padding-right: 72px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  .search-result__inner-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .search-result:nth-of-type(2n) {
     border: none; }
   .search-result__col {
@@ -73,9 +80,19 @@
   .search-result__btn_details {
     width: 110px;
     background-color: #81b3d2; }
+    .search-result__btn_details:hover {
+      background-color: #669ec0; }
+    .search-result__btn_details:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd; }
   .search-result__btn_to-book {
     width: 142px;
     background-color: #766357; }
+    .search-result__btn_to-book:hover {
+      background-color: #604e43; }
+    .search-result__btn_to-book:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #503e33; }
   .search-result__col_rating {
     display: -webkit-box;
     display: -webkit-flex;
@@ -104,12 +121,15 @@
   .search-result__stars {
     float: right; }
   .search-result__li {
-    display: inline-block; }
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    outline: 1px solid red; }
   .search-result__icon-font {
     display: block;
     font-size: 2em;
-    color: #81b3d2;
-    outline: 1px solid red; }
+    color: #81b3d2; }
   .search-result__rating {
     float: right;
     display: block;

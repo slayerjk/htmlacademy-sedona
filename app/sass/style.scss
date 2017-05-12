@@ -104,12 +104,21 @@ input[type="submit"] {
 ul {
   list-style: none; }
 
-.body__container {
+.body-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 1056px;
+  padding: {
+    left: 6%;//72
+    right: 6%;//72
+  }
 }
 
 .clearfix {
@@ -148,7 +157,13 @@ ul {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  
+  .inner-container {
+    max-width: 678px;
+    padding: {
+      left: 5.859375%;//45
+      right: 5.859375%;//45
+    }
+  }
 }
 
 /* Media-queries-desktops/smartphones */
