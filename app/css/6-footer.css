@@ -34,12 +34,10 @@
   .footer__twitter-tag {
     padding-top: 46px;
     padding-left: 30px;
-    text-align: left;
-    outline: 1px solid red; }
+    text-align: left; }
   .footer__socials {
     padding-top: 36px;
-    padding-left: 29px;
-    outline: 1px solid red; }
+    padding-left: 29px; }
   .footer__social-link {
     display: inline-block;
     position: relative;
@@ -81,17 +79,14 @@
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    padding-top: 41px;
-    outline: 1px solid red; }
+    padding-top: 41px; }
     .footer__made-by .footer__sedona-description {
       margin-right: 9px;
-      padding-top: 6px;
-      outline: 1px solid red; }
+      padding-top: 6px; }
   .footer__made-by-link {
     width: 113px;
     height: 39px;
-    background: #fff url(../img/footer__made-by-logo.png) no-repeat center;
-    outline: 1px solid red; }
+    background: #fff url(../img/footer__made-by-logo.png) no-repeat center; }
     .footer__made-by-link:hover {
       background: #fff url(../img/footer__made-by-logo_hvr.png) no-repeat center; }
     .footer__made-by-link:active {

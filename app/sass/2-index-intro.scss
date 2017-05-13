@@ -3,7 +3,6 @@
 .intro {
   position: relative;
   text-align: center;
-  outline: 1px solid red;
   
   &__images-block {
     width: 100%;
@@ -20,7 +19,6 @@
     left: 50%;
     display: block;
     transform: translate(-50%, 0%);
-    outline: 1px solid red;
   }
   
   &__img_welcome {

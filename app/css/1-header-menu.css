@@ -8,12 +8,10 @@
   padding-top: 1.25%;
   /*15px;*/
   padding-bottom: 1.4166666667%;
-  /*25px;*/
-  outline: 1px solid red; }
+  /*25px;*/ }
   .header-menu__wrapper {
     position: relative;
-    width: 100%;
-    outline: 1px solid red; }
+    width: 100%; }
   .header-menu__logo {
     position: absolute;
     top: -22%;
@@ -24,14 +22,11 @@
     -webkit-transform: translate(-50%, -22%);
         -ms-transform: translate(-50%, -22%);
             transform: translate(-50%, -22%);
-    z-index: 1;
-    outline: 1px solid red; }
+    z-index: 1; }
   .header-menu__logo-img {
     -webkit-transform: translate(50%, 0%);
         -ms-transform: translate(50%, 0%);
             transform: translate(50%, 0%); }
-  .header-menu__col {
-    outline: 1px solid blue; }
   .header-menu__col_left {
     float: left;
     width: 32%;
@@ -53,8 +48,7 @@
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #000;
     /*14/26*/
-    text-transform: uppercase;
-    outline: 1px solid red; }
+    text-transform: uppercase; }
     .header-menu__link:hover {
       color: #81b3d2; }
     .header-menu__link:active {

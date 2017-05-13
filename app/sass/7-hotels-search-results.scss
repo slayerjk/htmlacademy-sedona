@@ -22,7 +22,6 @@
   
   &__col {
     height: 100px;
-    outline: 1px solid red;
   }
   
   &__col_img {
@@ -36,9 +35,18 @@
   }
   
   &__name {
+    display: block;
     margin-bottom: 8px;
     @include font(2.1em, 1.2380952381em, "PT Sans Bold", #000);//21/26//
     text-transform: uppercase;
+    
+    &:hover {
+      color: $sedona-blue;
+    }
+    
+    &:active {
+      color: $sedona-grey;
+    }
   }
   
   &__col_description {
@@ -47,7 +55,6 @@
   
   &__description-wrapper {
     width: 100%;
-    outline: 1px solid red;
   }
   
   &__details-block {
@@ -140,7 +147,6 @@
     display: inline-block;
     width: 20px;
     height: 22px;
-    outline: 1px solid red;
   }
   
   &__icon-font {

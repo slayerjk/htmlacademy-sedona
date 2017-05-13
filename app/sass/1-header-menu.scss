@@ -6,12 +6,10 @@
     top: 1.25%;/*15px;*/
     bottom: 1.4166666667%;/*25px;*/
   }
-  outline: 1px solid red;
   
   &__wrapper {
     position: relative;
     width: 100%;
-    outline: 1px solid red;
   }
   
   &__logo {
@@ -23,15 +21,10 @@
     background: transparent url('../img/header__logo-bg.png') no-repeat center;
     transform: translate(-50%, -22%);
     z-index: 1;
-    outline: 1px solid red;
   }
   
   &__logo-img {
     transform: translate(50%, 0%);
-  }
-  
-  &__col {
-    outline: 1px solid blue;
   }
   
   &__col_left {
@@ -62,8 +55,7 @@
     display: block;
     @include font(1.4em, 1.8571428571em, "PT Sans Bold", #000);/*14/26*/
     text-transform: uppercase;
-    outline: 1px solid red;
-    
+        
     &:hover {
       color: $sedona-blue;
     }

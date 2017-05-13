@@ -24,8 +24,7 @@
           flex-wrap: wrap; }
   .features__block-part {
     width: 33.33%;
-    text-align: center;
-    outline: 1px solid red; }
+    text-align: center; }
   .features__block-part_bg {
     width: 66.67%;
     height: 256px; }
@@ -61,8 +60,7 @@
       height: 80px;
       margin: 0 auto;
       margin-bottom: 25px;
-      background: #fff url("../img/features__icons-sprite.png") no-repeat center;
-      outline: 1px solid red; }
+      background: #fff url("../img/features__icons-sprite.png") no-repeat center; }
     .features__block-part_icon-decription .features__block-part-icon_house {
       background-position: -5px 0px; }
     .features__block-part_icon-decription .features__block-part-icon_food {

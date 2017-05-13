@@ -33,7 +33,6 @@
       left: 30px;
     }
     text-align: left;
-    outline: 1px solid red;
   }
   
   &__socials {
@@ -41,7 +40,6 @@
       top: 36px;
       left: 29px;
     }
-    outline: 1px solid red;
   }
   
   &__social-link {
@@ -89,12 +87,10 @@
     justify-content: flex-start;
     align-items: stretch;
     padding-top: 41px;
-    outline: 1px solid red;
-    
+      
     .footer__sedona-description {
       margin-right: 9px;
       padding-top: 6px;
-      outline: 1px solid red;
     }
   }
   
@@ -102,8 +98,7 @@
     width: 113px;
     height: 39px;
     background: #fff url(../img/footer__made-by-logo.png) no-repeat center;
-    outline: 1px solid red;
-    
+        
     &:hover {
       background: #fff url(../img/footer__made-by-logo_hvr.png) no-repeat center;
     }

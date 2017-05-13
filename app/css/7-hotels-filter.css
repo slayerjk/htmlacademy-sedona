@@ -1,7 +1,15 @@
 /*SASS-----------------------------------------*/
 /*Mixins*/
 /*Templates*/
-.filter__range-values::before, .filter__range-toggle::after {
+.filter__range-toggle-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.filter__range-values::before {
   position: absolute;
   content: ""; }
 
@@ -25,8 +33,6 @@
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
-  .filter__col {
-    outline: 1px solid red; }
   .filter__col:first-of-type {
     margin-right: 9.75%; }
   .filter__col_range {
@@ -116,8 +122,7 @@
     position: relative;
     float: right;
     width: 95.5%;
-    height: 20px;
-    outline: 1px solid red; }
+    height: 20px; }
   .filter__range-scale, .filter__range-bar, .filter__range-toggle {
     position: absolute;
     top: 50%;
@@ -139,24 +144,19 @@
     -webkit-border-radius: 50%;
             border-radius: 50%;
     cursor: pointer; }
-    .filter__range-toggle::after {
-      top: 50%;
-      left: 50%;
-      width: 4px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.3);
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-    .filter__range-toggle:hover .filter__range-toggle::after,
-    .filter__range-toggle:active .filter__range-toggle::after {
-      background-color: #1c4f80; }
   .filter__range-toggle_left {
     left: -1%; }
   .filter__range-toggle_right {
     left: 79.3%; }
+  .filter__range-toggle-dot {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .filter__range-toggle:hover > .filter__range-toggle-dot,
+  .filter__range-toggle:active > .filter__range-toggle-dot {
+    background-color: #1c4f80; }
   .filter__input_submit {
     position: absolute;
     left: 49.7%;
@@ -187,4 +187,4 @@
   .filter__col:first-of-type {
     margin-right: 12.3697916667%; }
   .filter__col_range {
-    width: 230px; } }
+    width: 29.94792%; } }

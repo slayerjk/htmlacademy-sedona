@@ -8,7 +8,6 @@
   &__block-part {
     width: 33.33%;
     text-align: center;
-    outline: 1px solid red;
   }
   &__block-part_bg {
     width: 66.67%;
@@ -57,7 +56,6 @@
       margin: 0 auto;
       margin-bottom: 25px;
       background: #fff url('../img/features__icons-sprite.png') no-repeat center;
-      outline: 1px solid red;
     }
     .features__block-part-icon_house {
       background-position: -5px 0px;

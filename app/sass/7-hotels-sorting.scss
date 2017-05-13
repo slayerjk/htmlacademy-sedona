@@ -13,10 +13,6 @@
     align-items: baseline;
   }
   
-  &__block {
-    outline: 1px solid red;
-  }
-  
   &__block_title {
     margin-right: 4.6%;
     @include font(1.2em, 1.5em, "PT Sans", #000);//12/18////check

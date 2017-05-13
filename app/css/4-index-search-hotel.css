@@ -28,8 +28,7 @@
     -webkit-transform: translate(-50%, -100%);
         -ms-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
-    z-index: 3;
-    outline: 1px solid red; }
+    z-index: 3; }
   .search-hotel__sedona-h3 {
     color: #fff; }
   .search-hotel__form-content {
@@ -48,8 +47,7 @@
   .search-hotel__input-block {
     position: relative;
     width: 100%;
-    margin-bottom: 29px;
-    outline: 1px solid red; }
+    margin-bottom: 29px; }
   .search-hotel__input-block:nth-of-type(2) {
     margin-bottom: 32px; }
   .search-hotel__label, .search-hotel__input {
@@ -97,8 +95,7 @@
             align-items: flex-start;
     margin-bottom: 52px; }
   .search-hotel__number-block {
-    position: relative;
-    outline: 1px solid red; }
+    position: relative; }
   .search-hotel__number-block_left {
     width: 226px; }
   .search-hotel__number-block_right {
@@ -126,26 +123,22 @@
     -webkit-transform: translate(-98.5%, -50%);
         -ms-transform: translate(-98.5%, -50%);
             transform: translate(-98.5%, -50%);
-    cursor: auto;
-    outline: 1px solid red; }
+    cursor: auto; }
   .search-hotel__icon-font_minus {
     left: 58.5%;
     -webkit-transform: translate(-58.5%, -50%);
         -ms-transform: translate(-58.5%, -50%);
-            transform: translate(-58.5%, -50%);
-    outline: 1px solid red; }
+            transform: translate(-58.5%, -50%); }
   .search-hotel__number-block_right .search-hotel__icon-font_minus {
     left: 46.5%;
     -webkit-transform: translate(-46.5%, -50%);
         -ms-transform: translate(-46.5%, -50%);
-            transform: translate(-46.5%, -50%);
-    outline: 1px solid red; }
+            transform: translate(-46.5%, -50%); }
   .search-hotel__icon-font_plus {
     left: 95%;
     -webkit-transform: translate(-95%, -50%);
         -ms-transform: translate(-95%, -50%);
-            transform: translate(-95%, -50%);
-    outline: 1px solid red; }
+            transform: translate(-95%, -50%); }
   .search-hotel__input_submit {
     width: 100%;
     padding-top: 16px;

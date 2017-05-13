@@ -4,7 +4,6 @@
 /*Variables*/
 /*---------------------------------------------*/
 .map {
-  height: 593px;
-  outline: 2px solid red; }
+  height: 593px; }
   .map__img {
     height: 593px; }

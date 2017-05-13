@@ -32,8 +32,7 @@
   .search-result:nth-of-type(2n) {
     border: none; }
   .search-result__col {
-    height: 100px;
-    outline: 1px solid red; }
+    height: 100px; }
   .search-result__col_img {
     height: 95px;
     padding-top: 5px;
@@ -41,17 +40,21 @@
   .search-result__img {
     height: 90px; }
   .search-result__name {
+    display: block;
     margin-bottom: 8px;
     font-size: 2.1em;
     line-height: 1.2381em;
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #000;
     text-transform: uppercase; }
+    .search-result__name:hover {
+      color: #81b3d2; }
+    .search-result__name:active {
+      color: #a9a9a9; }
   .search-result__col_description {
     width: 258px; }
   .search-result__description-wrapper {
-    width: 100%;
-    outline: 1px solid red; }
+    width: 100%; }
   .search-result__details-block {
     float: left; }
   .search-result__price-block {
@@ -124,8 +127,7 @@
     position: relative;
     display: inline-block;
     width: 20px;
-    height: 22px;
-    outline: 1px solid red; }
+    height: 22px; }
   .search-result__icon-font {
     display: block;
     font-size: 2em;

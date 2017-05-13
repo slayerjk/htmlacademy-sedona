@@ -9,8 +9,7 @@
 /*---------------------------------------------*/
 .intro {
   position: relative;
-  text-align: center;
-  outline: 1px solid red; }
+  text-align: center; }
   .intro__images-block {
     width: 100%;
     height: 507px;
@@ -23,8 +22,7 @@
     display: block;
     -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-    outline: 1px solid red; }
+            transform: translate(-50%, 0%); }
   .intro__img_welcome {
     top: 75px; }
   .intro__img_gorgeous-block {

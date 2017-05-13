@@ -20,8 +20,6 @@
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline; }
-  .sorting__block {
-    outline: 1px solid red; }
   .sorting__block_title {
     margin-right: 4.6%;
     font-size: 1.2em;

@@ -12,7 +12,7 @@ $(document).ready(function () {
   };
   
   /*Search-hotel Sliding(up/down) form*/
-  $('.search-hotel__form-content').show();/*check*/
+  $('.search-hotel__form-content').hide();/*check*/
   
   $('.search-hotel__title-block').on('click', function () {
     $('.search-hotel__form-content').slideToggle();
