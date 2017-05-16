@@ -15,26 +15,14 @@ gulp.task('sass', function(){ // Создаем таск Sass
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 });
 
-gulp.task('scripts', function() {
-    return gulp.src('app/libs/*.js') //All *.js in app/libs
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('app/libs')); // Выгружаем в папку app/js
-});
 
-gulp.task('scripts-min', function() {
+gulp.task('script-min', function() {
     return gulp.src('app/js/script.js') //script.js in app/js
-        .pipe(concat('script.min.js')) // Собираем их в кучу в новом файле libs.min.js
+        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 
-gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/libs/libs.css') // Выбираем файл для минификации
-        .pipe(cssnano()) // Сжимаем
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
-});
 
 gulp.task('css-build', function() {
     return gulp.src('app/css/*.css') //All *.css in app/css
@@ -50,31 +38,30 @@ gulp.task('css-build', function() {
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist'); // Удаляем папку dist перед сборкой
+    return del.sync('prod'); // Удаляем папку dist перед сборкой
 });
 
-
-gulp.task('build', ['clean', 'sass', 'scripts', 'scripts-min', 'css-build'], function() {
+gulp.task('build', ['clean', 'sass', 'script-min', 'css-build'], function() {
     var buildCss = gulp.src('app/css/main.min.css')
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('prod/css'))
 
     var buildCss = gulp.src('app/libs/*.css')
-    .pipe(gulp.dest('dist/libs'))
+    .pipe(gulp.dest('prod/libs'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('prod/fonts'))
 
     var buildImg = gulp.src('app/img/**/*') // Переносим картинки в продакшен
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('prod/img'))
 
-    var buildJs = gulp.src('app/libs/libs.min.js') // Переносим скрипты в продакшен
-    .pipe(gulp.dest('dist/libs'))
+    var buildJs = gulp.src('app/libs/*.js') // Переносим скрипты в продакшен
+    .pipe(gulp.dest('prod/libs'))
 
     var buildJs = gulp.src('app/js/script.min.js') // Переносим скрипты в продакшен
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('prod/js'))
 
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('prod'));
 });
 
 gulp.task('clear', function () {

@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-features__icon_house {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -5px;
+}
+
+.sprite-features__icon_food {
+    width: 74px;
+    height: 70px;
+    background-position: -90px -5px;
+}
+
+.sprite-features__icon_gift {
+    width: 64px;
+    height: 76px;
+    background-position: -174px -5px;
+}
